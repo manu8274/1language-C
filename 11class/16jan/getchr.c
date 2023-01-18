@@ -3,8 +3,11 @@
 void main()
 {
     int d;
-    printf("\n enter;");
-    d = getwchar();
+    char s[10];
+    d=50875;
+    sprintf(s,"%d",d);
     printf("value=:");
-    putwchar(d);
+    printf("%s",s);
+    char x='1';
+    printf("%c",x);
 }
