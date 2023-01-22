@@ -10,16 +10,16 @@ int main(){
     printf("new nmbers a=%d and b=%d",a,b);
     return 0;
 }/*
-/* swapping without temp
+/* swapping without temp*/
 #include<stdio.h>
 
 int main(){
     int a,b;
-    printf("\n Enter the numbers: ");
+    printf("\n Enter the numbers a and b: ");
     scanf("%d %d", &a,&b);
     a=a + b;
     b=a-b;
     a=a-b;
     printf("new nmbers a=%d and b=%d",a,b);
     return 0;
-}*/
+}
