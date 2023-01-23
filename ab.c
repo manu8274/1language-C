@@ -2,8 +2,8 @@
 #include<math.h>
 int main()
 {
-    float a,b,sum;
-    scanf("%f %f",&a,&b);
-    sum=a/b;
-    printf("%f",sum); 
+    int a,b,c;
+    scanf("%d %d",&a,&b);
+    c=pow(a,b);
+    printf("%d",)
 }
