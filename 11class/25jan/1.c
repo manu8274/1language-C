@@ -7,4 +7,5 @@ void main()
     {
         printf("\nhello");
     }
+    return 0;
 }
