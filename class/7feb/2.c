@@ -8,7 +8,10 @@ void main()
 
     if (num<=0) goto end;
     printf("num=%d.",num);
-    end:
-        printf("\nbye");
+    if (num>100)
+    {
+        end:
+            printf("\nbye");
 
+    }
 }
