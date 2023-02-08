@@ -1,33 +1,59 @@
 #include<stdio.h>
-#include<math.h>
 
-void main()
-{
-    int num;
-    printf("enter the num:");
-    scanf("%d",&num);
+    //main program
 
-    int nnum=0;
-    int orignum=num;
+    int main()
 
-    while (num>0)
     {
-        int d;
-        d=num%10;
-        
-        if (d==0)   
+
+        int num,num2=0;
+
+        printf("Enter number: ");
+
+        //user input
+
+        scanf("%d", &num);
+
+        //checking for 0 input
+
+        if(num == 0)
+
+            num2=1;
+
+        //converting 0 to 1
+
+        while(num>0)
+
         {
-            nnum=1*10 +d;
+
+            int rem = num%10;
+
+            if(rem == 0)
+            
+                rem = 1;
+
+            num = num/10;
+
+            num2=num2*10+rem;
+
         }
-        else if (d==1)
-        {
-            nnum=nnum*100;
-        }
-        else
-        {
-            nnum=nnum*10+d; 
-        }
-        num=num/10;
+
+       num = 0 ; // Store the reverse of num2
+
+       while(num2>0){
+
+        int r = num2%10;
+
+        num= num*10 + r;
+
+        num2 /= 10;
+
+      }
+
+        //converted number
+
+        printf("Converted number is: %d" ,num);
+
+        return 0;
+
     }
-    printf("for the num %d new number is %d.",orignum,nnum);
-}
