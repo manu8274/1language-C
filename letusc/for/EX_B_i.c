@@ -3,15 +3,16 @@
 
 int main()
 {
+    int a=1;
     for (int i=1;i<=4;i++)
     {
-        for (int j=1;j<=4-i;j++)
+        for (int j=0;j<4-i;j++)
         {
             printf(" ");
         }
-        for (int k=4-i;k<4;k++)
+        for (int k=0;k<i;k++)
         {
-            printf("%d ",4+i-k);
+            printf("%d ",a++);
         }
         printf("\n");
     }
