@@ -5,7 +5,8 @@ int addmult(int x,int y)
     int u,v;
     u=x+y;
     v=x*y;
-    return (u,v);
+    return v;
+    return u;
 }
 int main()
 {
