@@ -6,6 +6,7 @@ int calcsum(int x,int y,int z)
     return d;
 }
 
+
 int main()
 {
     int a,b,c,sum;
