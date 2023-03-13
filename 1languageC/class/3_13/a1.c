@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 /*int main()
 {
@@ -36,10 +37,21 @@ int main()
     ptr=&f;
     printf("typr casting=%f\n",*(float*)ptr);
     printf("typr casting=%d\n",(float*)ptr);
-}*/
+}
 //wild pointer-unintialised pointer
 int main()
 {
     int *p;
     printf("%d",*p);
+    return 0;
+}*/
+//dangling pointer
+int main()
+{
+    int *ptr=(int*)malloc(sizeof(int));
+    printf("%d\n",sizeof(ptr));
+    free(ptr);
+    printf("%d",*ptr);
+    ptr=NULL;
+    return 0;
 }
