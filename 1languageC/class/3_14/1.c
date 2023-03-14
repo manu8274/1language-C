@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdio.h>
 // using call by value
 /*int swapv(int x,int y){
     int t;
