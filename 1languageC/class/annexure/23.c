@@ -1,5 +1,4 @@
 #include<stdio.h>
-int fact=1;
 int facto(int x){
     if (x==1 || x==0){
         return 1;
@@ -10,6 +9,8 @@ int facto(int x){
 }
 int main(){
     int x;
-    x=facto(5);
-    printf("%d",x);
+    printf("enter the number:");
+    scanf("%d",&x);
+    int z=facto(x);
+    printf("%d",z);
 }
