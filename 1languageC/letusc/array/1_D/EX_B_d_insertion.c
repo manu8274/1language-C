@@ -24,8 +24,7 @@ int main()
                 arr[i]=t;
             }
             
-        }
-        
+        }   
     }
     printf("\nafter insertion sort array:");
     for (int i = 0; i < size; i++)
