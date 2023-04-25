@@ -13,7 +13,7 @@
     <div>
         <h1 style="text-align: center;">Registration for the clubs</h1>
     </div>
-    <form target="_self" id="club" method="post" action="data.php">
+    <form id="club" method="get" action="data.php">
         <center>
                 <div style="border-radius:15px;border: solid black 2px;background-color: aliceblue; width: 50%;height: 180px; text-align: justify;margin: 0px;font-size:20px; padding: 20px;line-height: 30px;">
                 <label for="fname"> student name</label> <input type="text" placeholder="name" id="fname" name="fname" style="border-radius: 5px;height: 30px;"><br><br>
@@ -45,20 +45,20 @@
             </div><br>
             <div  style="border-radius: 15px;border: solid black 2px;background-color: aliceblue; width: 50%;height:120px; text-align: justify;margin: 0px;font-size:20px; padding: 20px;line-height: 30px;">
                 which club would you like to join ?<br>
-                <select name="fclub" id="107" style="border-radius: 5px;width: 100px;text-align: center;height: 30px;">
-                    <option value="select">select</option>
-                    <option value="architecture club">architecture club</option>
-                    <option value="basketbball club">basketbball club</option>
-                    <option value="carrom club">carrom club</option>
-                    <option value="chess club">chess club</option>
-                    <option value="coding club">coding club</option>
-                    <option value="communication club">communication club</option>
-                    <option value="cricket club">cricket club</option>
-                    <option value="debate club">debate club</option>
-                    <option value="decoration club">decoration club</option>
-                    <option value="electronics club">electronics club</option>
-                    <option value="football club">football club</option>
-                    <option value="math club">math club</option>
+                <select name="fclub" id="107"  style="border-radius: 5px;width: 100px;text-align: center;height: 30px;">
+                    <option style="animation: alternate;" value="select">select</option>
+                    <option class="opt" value="architecture club">architecture club</option>
+                    <option class="opt" value="basketbball club">basketbball club</option>
+                    <option class="opt" value="carrom club">carrom club</option>
+                    <option class="opt" value="chess club">chess club</option>
+                    <option class="opt" value="coding club">coding club</option>
+                    <option class="opt" value="communication club">communication club</option>
+                    <option class="opt" value="cricket club">cricket club</option>
+                    <option class="opt" value="debate club">debate club</option>
+                    <option class="opt" value="decoration club">decoration club</option>
+                    <option class="opt" value="electronics club">electronics club</option>
+                    <option class="opt" value="football club">football club</option>
+                    <option class="opt" value="math club">math club</option>
                     
                 </select><br>
                 anything you want to share -: <br>

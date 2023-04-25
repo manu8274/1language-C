@@ -1,8 +1,23 @@
 body{
-    background-color:  rgba(162, 232, 199, 0.215);
     font-family: 'Times New Roman', Times, serif;
-    align-items: center;
-    text-transform: capitalize;
+    font-size: medium;
+    background-image: url("/html/photos/backgrnd.jpg");
+    background-size: cover;
+}
+background-image{
+    opacity: 50%;
+}
+.myimg{
+    opacity: 0.5;
+}
+ad1{
+    float: left;
+    width: 25%;
+}
+ad2{
+    float: right;
+    width: 25%;
+    top: 0px;
 }
 
 .button{
@@ -10,7 +25,6 @@ body{
     border-radius: 2px;
 }
 .button button{
-    text-align: center;
     border-radius: 5px;
     font-style: italic;
     color: brown;
