@@ -79,17 +79,6 @@ ad2{
     border-radius: 5px;
     animation:anim 3s linear forwards;
 }
-.toast.resetted::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 5px;
-    background-color: orange;
-    border-radius: 5px;
-    animation:anim 3s linear forwards;
-}
 @keyframes anim{
     100%{
         width:0;
