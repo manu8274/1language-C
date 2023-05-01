@@ -13,7 +13,7 @@
             <iframe width="320" height="245" style="float: left;position: fixed;" src="https://www.youtube.com/embed/a96NO-thMfs?autoplay=1&start=1">
             </iframe>
         </ad1>
-        <form id="club" method="get" style="width: 60%;align-self: center;margin-left: 25%;float: left; top: 0px;">
+        <form id="club" style="width: 60%;align-self: center;margin-left: 25%;float: left; top: 0px;">
             <img src="/html/photos/clubs.jpeg" alt="clubs" title="clubs" height="190px" width="95%" style="margin-left:20px;border-radius: 40px;"><br>
             <center><br>
                 <div style="border-radius:15px;border: solid black 2px;background-color: aliceblue; width: 90%;height: 180px; text-align: justify;margin: 0px;font-size:20px; padding: 20px;line-height: 30px;">
@@ -66,9 +66,9 @@
                     <input type="text" placeholder="feedback" name="feedback" style="border-radius: 5px;height: 30px;">
                 </div>
     <div class="button">
-        <button onclick="showToast(successMsg)" id="submit">submit</button>
-        <button onclick="showToast(resetMsg)">reset</button>
-    </div></center></form>
+        <button type="button" onclick="showToast(successMsg)" id="submit">submit</button>
+        <button type="reset" onclick="showToast(resetMsg)">reset</button>
+    </div>
     <div id="toastbox"></div>
     <script>
         let toastbox=document.getElementById('toastbox');
@@ -84,12 +84,13 @@
             }
             if(msg.includes('successfully')){
                 toast.classList.add('successfully');
+                setTimeout(() => {
+                    club.submit(club);
+                }, 3000);
             }
-            setTimeout(() => {
-                club.submit();
-            }, 3000);
+            
         }
-    </script>
+    </script></center></form>
     </section>
 </body>
 </html>
