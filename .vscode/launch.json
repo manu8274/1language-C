@@ -1,7 +1,6 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
             "name": "(gdb) Attach",
             "type": "cppdbg",
@@ -47,6 +46,12 @@
                 }
             ],
             "preLaunchTask": "C/C++: gcc.exe build active file"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/html/1class/5_1.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/html/1class/5_1.html"
         }
     ]
 }
