@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/html/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#d").click(function(){
+                $("#b").hide(500,function(){
+                    $("#c").show(500,function(){
+                        myfunction();
+                    })
+                });
+            })
+        });
+        function myfunction(){
+                $("#c").hide(500,function(){
+                    $("#b").show(500,function(){
+                        myfunction();
+                    })
+                });
+            }
+    </script>
+</head>
+<body id="d">
+    <div id="a" style="cursor: pointer;border: 2px solid black;border-radius: 5px; display: inline-block;">prss this button</div>
+    <div id="b"><img src="/html/photos/clubs.jpeg" alt=""></div>
+    <div id="c" style="display: none;"><img src="/html/photos/flash.jpg" alt="" srcset=""></div>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/html/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#a").click(function(){
+                $("#b").hide(1000,function(){
+                    $("#c").show(1000,function(){
+                        $("#c").hide(1000,function(){
+                            $("#b").show(1000);
+                        })
+                    });
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="a" style="cursor: pointer;border: 2px solid black;border-radius: 5px; display: inline-block;">prss this button</div>
+    <div id="b"><img src="/html/photos/clubs.jpeg" alt=""></div>
+    <div id="c" style="display: none;"><img src="/html/photos/flash.jpg" alt="" srcset=""></div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/html/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#sd").click(function(){
+                $("#dn").hide("slow",function(){
+                    $("#dn").show("slow");
+                });
+            })
+        })
+    </script>
+    <style>
+        #dn,#sd{
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        }
+        *{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="sd" style="cursor: pointer;"><h2>click to slide down</h2></div>
+    <div id="dn"  style="transform: scale(1);">hello how r u ?</div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/html/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#sd").click(function(){
+                $("#dn").slideToggle("slow");
+            })
+        })
+    </script>
+    <style>
+        #dn,#sd{
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        }
+        *{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="sd"><h2>click to slide down</h2></div>
+    <div id="dn"  style="transform: scale(1);">hello how r u ?</div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/html/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#a").click(function(){
+                $("#b").hide(500,function(){
+                    $("#c").show(500,function(){
+                        $("#b").show(500,function(){
+                            $("#c").hide(500);
+                        })
+                    });
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="a" style="cursor: pointer;border: 2px solid black;border-radius: 5px; display: inline-block;">prss this button</div>
+    <div id="b"><img src="/html/photos/clubs.jpeg" alt=""></div>
+    <div id="c" style="display: none;"><img src="/html/photos/flash.jpg" alt="" srcset=""></div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/html/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#sd").click(function(){
+                $("#dn").hide("slow",function(){
+                    $("#dn").show("slow");
+                });
+            })
+        })
+    </script>
+    <style>
+        #dn,#sd{
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        }
+        *{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="sd" style="cursor: pointer;"><h2>click to slide down</h2></div>
+    <div id="dn"  style="transform: scale(1);">hello how r u ?</div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/html/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#sd").click(function(){
+                $("#dn").slideToggle("slow");
+            })
+        })
+    </script>
+    <style>
+        #dn,#sd{
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        }
+        *{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="sd"><h2>click to slide down</h2></div>
+    <div id="dn"  style="transform: scale(1);">hello how r u ?</div>
+</body>
+</html> -->

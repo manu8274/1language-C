@@ -1,0 +1,34 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+#pinfo{
+    border: 2px solid black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+.container{
+    align-items: center;
+    justify-content: cennter;
+    text-align: center;
+    display: none;
+}
+#aster{
+    color: red;
+}
+#pinfo:hover{
+    background-color: aliceblue;
+}
+#name:hover{
+    background-color: rgb(199, 199, 232);
+}
+#lastname:hover{
+    background-color:rgb(199, 199, 232);
+}
+#number:hover{
+    background-color:rgb(199, 199, 232);
+}
+#bday:hover{
+    background-color:rgb(199, 199, 232);
+}
