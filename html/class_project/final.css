@@ -2,15 +2,35 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
 }
+.entry{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#ad1{
+    display: inline-block;
+    position: fixed;
+}
+#ent{
+    align-items: center;
+    text-transform: capitalize;
+    text-align: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    align-self: center;
+    display: inline-block;
+    padding: 20px;
+    
+}
 #pinfo{
     border: 2px solid black;
     display: inline-block;
     padding: 5px;
     border-radius: 10px;
 }
-.container{
+.container_page1{
     align-items: center;
-    justify-content: cennter;
+    justify-content: center;
     text-align: center;
     display: none;
 }
