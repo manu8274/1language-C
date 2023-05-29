@@ -145,6 +145,7 @@ body{
     right: 0;
     border-color: green;
     background-color: azure;
+    cursor: pointer;
 }  
 .toastbox::after{
     content: '';

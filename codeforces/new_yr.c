@@ -6,7 +6,7 @@ int main(){
         long long int y;
         scanf("%lli",&y);
         //n 2020 + m 2021 =y;
-        int x=0;
+        long long int x=0;
         while (1){
             long long int z;
             z=y-x*2021;
