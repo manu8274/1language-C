@@ -83,6 +83,7 @@ body{
     margin-bottom: 2px;
     padding: 2px;
     size-adjust: 10px;
+    cursor: pointer;
 }
 #familyinfo{
     border: 2px solid black;
@@ -131,6 +132,7 @@ body{
     margin-bottom: 2px;
     padding: 2px;
     size-adjust: 10px;
+    cursor: pointer;
 }
 #toastbox{
     border: 2px solid black;
@@ -156,10 +158,4 @@ body{
     height: 5px;
     background-color: green;
     border-radius: 5px;
-    animation:anim 3s linear backwards;
-}
-@keyframes anim{
-    100%{
-        width:0;
-    }
 }
