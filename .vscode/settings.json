@@ -3,5 +3,6 @@
     "files.associations": {
         "stdio.h": "c",
         "math.h": "c"
-    }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
 }

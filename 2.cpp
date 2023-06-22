@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
 int main(){
-    cout<<"jhv";
+    cout<<"jhv"<<endl;
     return 0;
 }
