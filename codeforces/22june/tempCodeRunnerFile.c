@@ -15,9 +15,9 @@ int main(){
                 z[i]='B';
                 z[i-1]='G';
                 i++;
+                c++;
             }
         }
-        c++;
     }
     printf("%s",z);
 }
