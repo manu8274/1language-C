@@ -6,7 +6,6 @@ void main()
     int num;
     printf("enter the value of num:");
     scanf("%d",&num);
-    helo();
     int orignum=num;
     for (int j=0;j<num;j++)
     {
