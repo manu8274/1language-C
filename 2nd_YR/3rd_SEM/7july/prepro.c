@@ -33,8 +33,27 @@
 //     printf("%d",AREA(5));
 // }
 /*print circle area using macro,directive,etc*/
-#include<stdio.h>
-#define AREA(s) 3.14*s*s
-int main(){
-    printf("%f",AREA(5));
-}
+// #include<stdio.h>
+// #define AREA(s) 3.14*s*s
+// int main(){
+//     printf("%f",AREA(5));
+// }
+
+// #include<stdio.h>
+// # define is_even(num) ((num%2)==0)
+// int main(){
+//     long int num;
+//     scanf("%d",&num);
+//     if(is_even(num)) printf("even");
+//     else    printf("odd");
+// }
+
+// #include<stdio.h>
+// #define valid(num) (num>=0 && num<=100)
+// int main(){
+//     int num;
+//     scanf("%d",&num);
+//     if valid(num)   printf("output value is within range");
+//     else    printf("output value is not within range");
+// }
+
