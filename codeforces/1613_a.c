@@ -53,6 +53,8 @@ int main(){
                 printf("<\n");
             }
         }
-        if(x1>x2)
+        if(x1>x2){
+            
+        }
     }
 }
