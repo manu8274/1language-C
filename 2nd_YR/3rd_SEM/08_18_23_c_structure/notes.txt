@@ -1,0 +1,5 @@
+overview
+before using predefined codes like int , float etc,
+structure to make your own structure data without any restriction 
+class ----
+structure- the structure in c lang is a userd define data type that can be used to group items of possible different type to single type.The items in a structure are called its member and they can be of any valid data types.(member==attribute)
