@@ -2,4 +2,6 @@ overview
 before using predefined codes like int , float etc,
 structure to make your own structure data without any restriction 
 class ----
-structure- the structure in c lang is a userd define data type that can be used to group items of possible different type to single type.The items in a structure are called its member and they can be of any valid data types.(member==attribute)
+structure- the structure in c lang is a userd define data type that can be used to group items of possible different type to single type.The items in a structure are called its member and they can be of any valid data types.(member==attribute)You can create a structure by using the struct keyword.
+using dot(.) operator we can access the structure, to use a structure we have to make instances like name for them
+if we make instance with them like struct{}s1 where  s1 is instance only one instances can be used but in main we use struct mystruct  s1 or we can use many instances in the main if we define it in main
