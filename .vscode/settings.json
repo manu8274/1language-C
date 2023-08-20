@@ -4,5 +4,6 @@
         "stdio.h": "c",
         "math.h": "c"
     },
-    "terminal.integrated.defaultProfile.windows": "PowerShell"
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "java.debug.settings.onBuildFailureProceed": true
 }
