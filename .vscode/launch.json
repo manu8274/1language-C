@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "first",
+            "request": "launch",
+            "mainClass": "begin.first",
+            "projectName": "1language-C_63a38b64"
+        },
+        {
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "hello.hello",
+            "projectName": "1language-C_63a38b64"
+        },
+        {
+            "type": "java",
+            "name": "hi",
+            "request": "launch",
+            "mainClass": "hi",
+            "projectName": "1language-C_63a38b64"
+        },
+        {
+            "type": "java",
             "name": "hello",
             "request": "launch",
             "mainClass": "hello",
