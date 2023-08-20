@@ -10,7 +10,7 @@ int main(){
             s=j;
             while(s<=n){
                 c++;
-                s=s*10 + i;
+                s=s*10 + j;
             }
         }
         printf("%d\n",c);

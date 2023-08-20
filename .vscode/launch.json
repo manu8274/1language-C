@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "z",
+            "request": "launch",
+            "mainClass": "begin.z",
+            "projectName": "1language-C_63a38b64"
+        },
+        {
+            "type": "java",
             "name": "first",
             "request": "launch",
             "mainClass": "begin.first",
