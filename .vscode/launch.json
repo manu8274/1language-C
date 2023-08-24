@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "factors",
+            "request": "launch",
+            "mainClass": "begin.factors",
+            "projectName": "1language-C_63a38b64"
+        },
+        {
+            "type": "java",
+            "name": "looop1",
+            "request": "launch",
+            "mainClass": "begin.looop1",
+            "projectName": "1language-C_63a38b64"
+        },
+        {
+            "type": "java",
+            "name": "q1",
+            "request": "launch",
+            "mainClass": "begin.q1",
+            "projectName": "1language-C_63a38b64"
+        },
+        {
+            "type": "java",
+            "name": "condition",
+            "request": "launch",
+            "mainClass": "begin.condition",
+            "projectName": "1language-C_63a38b64"
+        },
+        {
+            "type": "java",
             "name": "z",
             "request": "launch",
             "mainClass": "begin.z",

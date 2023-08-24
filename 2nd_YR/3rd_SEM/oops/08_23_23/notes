@@ -1,0 +1,16 @@
+structure 
+    struct emp {
+        char x;
+        float y;
+    }e;
+    in structure no memory sharing 
+    |x  |  y |
+
+
+
+union
+    union emp{
+        char x;
+        float y;
+    }e;
+    memory sharing . allocates memory acc to the largest one 
