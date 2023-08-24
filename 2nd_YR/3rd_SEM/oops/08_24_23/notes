@@ -3,5 +3,9 @@ fromat of st1
 5  X 2
 2  X 5
 union 
-    all member in union share same memory.
-    
+    all member in union share same memory. eg if we use both char an int so we can get 4 byte for even char .
+    why we use union:--
+    -->memory efficiency : (optimisation)
+    union can help save memory when you need to store down different types of data but only one of them at a time . since memory allocated is determined by largest member. so that can help to waste memory.
+    -->type conversion :
+    can be used to easily reinterpret the undying memory 
