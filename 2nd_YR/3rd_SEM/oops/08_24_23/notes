@@ -2,6 +2,8 @@ fromat of st1
 10 X 1
 5  X 2
 2  X 5
+10 X 1
+total 40;
 union 
     all member in union share same memory. eg if we use both char an int so we can get 4 byte for even char .
     why we use union:--

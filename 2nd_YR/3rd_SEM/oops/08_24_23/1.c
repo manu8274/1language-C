@@ -44,7 +44,7 @@ float rectarea(float length,float width){
 float circarea(float radius){
     return 3.14* radius *radius;
 }
-float rectperi(float lenghth,float width){
+float rectperi(float length,float width){
     return ((length +width )*2);
 }
 float circperi(float radius){
@@ -54,5 +54,9 @@ int main(){
     union shape shape1;
     shape1.rect.length=5;
     shape1.rect.width=3;
-    float ra=rectarea()
+    printf("area of rectangle =%0.2f\n",rectarea(shape1.rect.length,shape1.rect.width));
+    printf("perimeter of rectangle =%0.2f\n",rectperi(shape1.rect.length,shape1.rect.width));
+    shape1.circle.radius=7;
+    printf("area of circle =%0.2f\n",circarea(shape1.circle.radius));
+    printf("perimeter of circle =%0.2f\n",circperi(shape1.circle.radius));
 }
