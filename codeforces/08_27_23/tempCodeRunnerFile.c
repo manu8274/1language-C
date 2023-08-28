@@ -23,17 +23,17 @@ int main(){
             }
         }
         else if(rr>dr && rc>dc){
-            int z;
-            if((n-rr) > (m-rc)){
-                z=n-rr;
-            }
-            else if((n-rr) < (m-rc)){
-                z=m-rc;
-            }
-            else{
-                z=(n-rr) + (m-rc);
-            }
-            int a=rr-dr,b=rc-dc;
+            // int z;
+            // if((n-rr) > (m-rc)){
+            //     z=n-rr;
+            // }
+            // else if((n-rr) < (m-rc)){
+            //     z=m-rc;
+            // }
+            // else{
+            //     z=(n-rr) + (m-rc);
+            // }
+            int a=2*n-(rr+dr),b=2*m-(rc+dc);
             if(a>b){
                 printf("%d\n",z+a);
             }
