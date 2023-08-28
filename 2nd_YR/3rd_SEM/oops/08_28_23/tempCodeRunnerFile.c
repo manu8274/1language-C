@@ -1,13 +1,17 @@
 #include<stdio.h>
 #include<string.h>
 
-union std{
-    int a;
-    char b[60];
-    double x;
-};
+// enum day {sun,mon,tue};//non -integer instances of enum in day 
+// int main(){
+//     enum day today;
+//     today=tue;
+//     printf("%d",today); 
+// }
 
+enum month{jan=1,feb,mar,apr,may,jun,jul,aug,sept,oct,nov,dec};
 int main(){
-    union std s1;
-    printf("%d",sizeof(s1));
+    enum month present=jan;
+    for (present=jan;present<=dec;present++){
+        printf("%d\n",present);
+    }
 }
