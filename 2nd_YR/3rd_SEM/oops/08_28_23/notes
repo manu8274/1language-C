@@ -1,0 +1,8 @@
+union :
+    used are in which machine -- in memory not waste , iot devices
+
+inter nesting bw structure and union
+
+enumeration:
+    generates a int value corrosponding to instances like
+    enum day{sun,mon,tue} sun=0,mon=1,tue=2
