@@ -1,0 +1,11 @@
+three modes a,r,w
+
+if we open a file in r and its not present we get a garbage val
+if we open a file in w and its not present it create a file of the name
+
+
+assignment 
+
+1)ask the name for file
+2)ask which mode to open use their power
+3)to make an infinte loop for ask mode and exit for ctrl d
