@@ -49,12 +49,11 @@ int main(){
             printf("enter the length of string.");
             int n;
             scanf("%d",&n);
-            getchar();
             printf("enter any string:");
             char arr[n];
             // scanf("%[^\n]%*c",arr);
             // fgets(arr,n,stdin);
-            gets(arr);
+            scanf("%s",arr);
             for (int i=0;i<n;i++){
                 putc(arr[i],ptr);
             }
