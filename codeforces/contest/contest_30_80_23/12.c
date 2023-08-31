@@ -6,6 +6,7 @@ int main(){
         int n,k;
         scanf("%d %d",&n,&k);
         int arr[n];
+        k=k%(n+1);
         for(int g=0;g<n;g++){
             scanf("%d",&arr[g]);
         }
