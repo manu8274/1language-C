@@ -1,0 +1,9 @@
+to do bubble sort,quick sort,merge sort,queue sort
+
+quick sort:recursive way
+    to choose favourote element any element from arr ie if either 1st or last or any in middle
+    eg 7 6 3 1 9
+    if we choose 7 as favourite element
+    s1 to check if it is at right position in sorted array but if not put it in right  position
+    now l=next element of favourite
+    right as right element of 
