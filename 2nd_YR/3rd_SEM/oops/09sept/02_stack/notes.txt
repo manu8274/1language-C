@@ -1,0 +1,14 @@
+stacks
+
+implemented through arrays in c
+to insert in same place and delete at same 
+varable named top which shows element at top 
+initially top =-1
+then after insertion of an element it becomes 0 ie top++
+to delete ie remove we just need to decreament top ie top-- and insert  new element
+operation of stack
+    • push() to insert an element into the stack
+    • pop() to fetch and remove an element from the stack to fetch and delete ie loike in list in python 
+    • top() Returns the top element of the stack. can also check for stack overflow 
+    • isEmpty() returns true if stack is empty , else false. 
+    • size() returns the size of stack.
