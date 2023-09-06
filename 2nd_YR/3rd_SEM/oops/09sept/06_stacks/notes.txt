@@ -1,0 +1,2 @@
+scenario based metho ie only a set of output for a set of input 
+using inbuilt sort qsort() in c lang
