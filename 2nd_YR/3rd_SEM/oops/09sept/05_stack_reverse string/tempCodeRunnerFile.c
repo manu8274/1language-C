@@ -41,14 +41,16 @@ int main(){
             push(arr[i],max);
         }
         else{
-            if(stack[top]==arr[i]){
+            if((stack[top]=='{' && arr[i]=='}') || (stack[top]=='[' && arr[i]==']') || (stack[top]=='(' && arr[i]==')')){
                 pop();
             }
-            else{
-                printf("---------------------------------STACK UNDERFLOW-----------------------------");
-                return 0;
-            }
         }
+    }
+    if (top==-1){
+        printf("\nbalanced brac:");
+    }
+    else{
+        printf("\nunbalanced brac:");
     }
     
 }
