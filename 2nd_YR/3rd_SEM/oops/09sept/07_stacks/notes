@@ -1,0 +1,3 @@
+queue has two pointr ie front=start and rear=end
+any item inserted at rear any item inserted at front
+if front surpass the rear the queue is empty or when front and rear are at zero
