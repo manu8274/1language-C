@@ -1,0 +1,1 @@
+polymorphism in cpp ie can exist two same name function but with different data type or taking different arguments or taking 1 and no arguments ie need 1 min difference which is implementable
