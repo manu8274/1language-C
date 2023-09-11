@@ -1,10 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
 
-#define maxsize 100
+#define maxsize 1000
 
-int priority(char op){
+int py(char op){
     switch (op)
     {
     case '+':
@@ -14,25 +14,24 @@ int priority(char op){
     case '/':
         return 2;
     case '^':
-        return 3;
+        return 3;    
     default:
         return -1;
     }
 }
 
-int isop(char op){
+int operator(char op){
     return (op=='+' || op=='-' || op=='*' || op=='/' || op=='^');
 }
+
 char* infixtopostfix(char* infix){
     int i,j=0;
     int len=strlen(infix);
     char* postfix=(char*)malloc(sizeof(char) * (len+2));
     char stack[maxsize];
     int top=-1;
-    for (int i=0;i<len;i++){
-        if(infix[i]==' ' || infix[i]=='\t'){
-            continue;
-        }
+
+    for(i=0;i<len;i++){
         if(isalnum(infix[i])){
             postfix[j++]=infix[i];
         }
@@ -50,27 +49,28 @@ char* infixtopostfix(char* infix){
                 top--;
             }
         }
-        else if(isop(infix[i])){
-            while(top>-1 && (priority(stack[top])>=priority(infix[i]))){
+        else if(operator(infix[i])){
+            while(top>-1 && (py(stack[top])>=py(infix[i]))){
                 postfix[j++]=stack[top--];
             }
             stack[++top]=infix[i];
         }
-    }
-    while(top>-1){
-        if(stack[top]=='('){
-            return "invalid";
+        while(top>-1){
+            if(stack[top]=='('){
+                return "invalid";
+            }
+            postfix[j++]=stack[top--];
         }
-        postfix[j++]=stack[top--];
-    }
-    postfix[j]='\0';
-    return postfix;
-}
 
+        postfix[j]='\0';
+        return postfix;
+    }
+}
 int main(){
     char infix[maxsize];
+
     scanf("%[^\n]s",infix);
-    char* postfix = infixtopostfix(infix);
+    char* postfix=infixtopostfix(infix);
     printf("%s",postfix);
     return 0;
 }

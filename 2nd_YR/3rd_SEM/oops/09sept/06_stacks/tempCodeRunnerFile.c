@@ -1,73 +1,45 @@
+// #include<stdio.h>
+// #include<stdlib.h>
+// #include<string.h>
+
+// int compare(const void *a,const void *b){
+//     int A=*((int *)a);
+//     int B=*((int *)b);
+//     return A-B;
+// }
+
+// int main(){
+//     int i,A[]={1,3,5,4,2,5};
+//     qsort(A,6,sizeof(int),compare);
+//     for (int i=0;i<6;i++){
+//         printf("%d",A[i]);
+//     }
+// }
+
+
+
 #include<stdio.h>
-#include<string.h>
 #include<stdlib.h>
+#include<string.h>
 
-int top=-1;
-int stack[50];
-int stackpop[50];
-int popi=0;
-char orig[500];
-int push(int n,int max){
-    if(top==max){
-        printf("------------------------STACK OVERFLOW---------------------");
-        return 0;
-    }
-    else{
-        top++;
-        stack[top]=n;
-    }
-}
-
-int pop(){    
-    stackpop[popi]=stack[top];
-    top=top-1;
-}
-
-int stringrev(char arr[],int n){
-    orig[n];
-    int tops=n-1;
-    for (int i=0;i<n;i++){
-        orig[i]=arr[tops];
-        tops--;
-    }
+int compare(void *a,void *b){
+    int A=*((int *)a);
+    int B=*((int *)b);
+    return A-B;
 }
 
 int main(){
-    int max;
-    printf("enter the length of expression:");
-    scanf("%d",&max);
-    char arr[max];
-    printf("enter the expression:");
-    scanf("%s",arr);
-    
-    stringrev(arr,max);
-    
-    for(int i=0;i<max;i++){
-        arr[i]=orig[i];
+    int n;
+    printf("enter the number of elements in array:");
+    scanf("%d",&n);
+    int arr[n];
+    for (int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
     }
-    for (int i=0;i<max;i++){
-        int y;
-        y=-1*(48 - arr[i]);
-        if(y>=0 && y<=9){
-            push(y,max);
-        }
-        else{
-            int k;
-            if(arr[i]=='+'){
-                k=stack[top-1]+stack[top];
-            }
-            else if(arr[i]=='*'){
-                k=stack[top-1]*stack[top];
-            }
-            else if(arr[i]=='-'){
-                k=stack[top-1]-stack[top];
-            }else if(arr[i]=='/'){
-                k=stack[top-1]/stack[top];
-            }
-            pop();
-            pop();
-            push(k,max);
-        }
+
+    qsort(arr,n,sizeof(int),compare);
+
+    for (int i=0;i<n;i++){
+        printf("%d\t",arr[i]);
     }
-    printf("\nThe final answer id = %d.",stack[0]);
 }
