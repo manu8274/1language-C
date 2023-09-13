@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+void main(){
     long long int n;
     cin>>n;
     cout<<n;
