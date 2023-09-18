@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int x;
-    cin>>x;
-    cout<<"\nnumber="<<x;
+    int *arr=new int[5];
+    cout<<arr[3];
 }

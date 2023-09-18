@@ -1,8 +1,10 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
+        "*.java": "java",
         "stdio.h": "c",
-        "math.h": "c"
+        "math.h": "c",
+        "iostream": "cpp"
     },
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "java.debug.settings.onBuildFailureProceed": true,

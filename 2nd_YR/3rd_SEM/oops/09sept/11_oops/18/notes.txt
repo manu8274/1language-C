@@ -1,0 +1,8 @@
+arrays cpp
+    related type of data when put toghether is called arrays
+    like int float char double,structure,enum,union,pointer
+    define by int arr[10];by static
+    int n=10;
+    int arr[n];by dynamic 
+    int arr[]={1,2,3,4,5,6,7};by initialising elements
+    
