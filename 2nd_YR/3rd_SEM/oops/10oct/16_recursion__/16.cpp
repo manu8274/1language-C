@@ -61,6 +61,8 @@ using namespace std;
 //     fibo(a,b,n);
 // }
 
+//note::::::::::------four types but upto today two types - direct that cal itself , indirect that call itself via another funct 
+
 int fibo(int n){
     if(n<=1)    return n;
     else{
