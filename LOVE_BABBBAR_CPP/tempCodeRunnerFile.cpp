@@ -1,38 +1,68 @@
 #include<iostream>
 using namespace std;
 
-int search(int a[],int n,int ele){
-    
-    int start=0,end=n-1,mid=(start+end)/2;
-    while(start<=end){
-        if(a[mid]==ele){
-            return mid;
-        }
-        else if(a[mid]>ele){
-            end=mid-1;
-        }
-        else{
-            start=mid+1;
-        }
-        mid=(start + end )/2;
-        mid=start + (end-start)/2; //another way to set mid
+void printarr(int arr[],int n){
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<"\t";
     }
-    return -1;
 }
+
+// //selection sort
+// int main(){
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for(int i=0;i<n;i++){
+//         cin>>arr[i];
+//     }
+//     for (int i=0;i<n;i++){
+//         for(int j=i+1;j<n;j++){
+//             if(arr[i]>arr[j]){
+//                 int temp=arr[i];
+//                 arr[i]=arr[j];
+//                 arr[j]=temp;
+//             }
+//         }
+//     }
+//     printarr(arr,n);
+// }
+
+
+// //bubble sort
+// int main(){
+//     int n;
+//     cin>>n;
+//     int arr[n];
+//     for(int i=0;i<n;i++){
+//         cin>>arr[i];
+//     }
+
+//     for(int i=0;i<n;i++){
+//         for(int j=0;j<n-1;j++){
+//             if (arr[j]>arr[j+1]){
+//                 int temp=arr[j+1];
+//                 arr[j+1]=arr[j];
+//                 arr[j]=temp;
+//             }
+//         }
+//     }
+//     printarr(arr,n);
+// }
 
 int main(){
     int n;
     cin>>n;
-    cout<<"ENTER THE SORTED ARRAY : "<<endl;
     int arr[n];
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    int ele;
-    cout<<endl<<"ENTER THE ELE TO BE SEARCHED: ";
-    cin>>ele;
-    int in;
-    in=search(arr,n,ele);
-    cout<<"THE "<<ele<<" IS AT "<<in<<" INDEX."<<endl;
-    return 0;
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-i;j++){
+            if (arr[j]>arr[j+1]){
+                swap(arr[j],arr[j+1]);
+            }
+        }
+    }
+    printarr(arr,n);
 }
