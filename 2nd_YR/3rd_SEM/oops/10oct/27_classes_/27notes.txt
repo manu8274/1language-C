@@ -1,0 +1,52 @@
+blueprint of class
+class Dog{
+    Access specifier:
+        data members;
+        member functions{
+            //function def;
+        }
+};
+
+data hiding by using private , public etc
+code reusability
+data binding == by binding same function using same data  
+flexibilty == polymorphism , multiple behaviour,function overloading etc
+
+
+array of object ::::-------
+    Dog dog[5]; array of 5 object of class dog 1st Dog=class name, dog=object name
+
+object as functions arg:::---
+    printprop(Dog dog){
+        cout<<<dog.breed<<""<<dog.color<<endl;
+    }
+    void main(){
+        Dog dog;
+        dog.breed="Pug";
+        dog.color="Brown";
+        printprop(dog); //  here og is object passed as arg
+    }
+
+access modifiers:::-
+    default-private
+
+    modifier         own class      derived     main
+    public           yes              yes       yes
+    private          yes              no        no
+    protected        yes              yes       no
+
+
+two types of function def in classes:::::
+    function def inside or function def outside
+    by default function def inside the class are made inline function(can also be long ie not inline if the code is complex)
+    if the function is complex but is inside the class we define the function inside the class but body is in outside class
+
+    class Dog{
+        public:
+            string breed,color;
+            void printp();
+    }
+
+    void Dog::printp(){
+        cout<<"Breed: "<<breed<<" ,color: "<<color<<endl;
+    }
