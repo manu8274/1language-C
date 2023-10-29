@@ -8,8 +8,11 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "C:/SFML-2.6.0/lib/libsfml-graphics.a",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "C:/SFML-2.6.0/include",
             ],
             "options": {
                 "cwd": "${fileDirname}"
