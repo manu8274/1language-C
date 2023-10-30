@@ -6,7 +6,8 @@
 #include<conio.h>
 #include<windows.h>
 using namespace std;
-
+ 
+//:::::::::::::::::::::::::::::::::::::to ask about how to go back to a function outside the class using the function inside the class
 
 class HOD{
     private:
@@ -63,7 +64,7 @@ class teachers{
             else if(choice==4)  mainteach();
         }
     public:
-        void mainteach(){
+        int mainteach(){
             system("COLOR 0e");
             system("cls");
             cout<<"hello teacher"<<endl;
@@ -91,7 +92,7 @@ class teachers{
                 cout<<"3.Do you want to go exit : ";
                 cin>>ch;
                 if(ch==1) teach(name);
-                else if(ch==2)    mainmain();
+                // else if(ch==2)    mainmain();
                 else    return 0;
             }
         }
