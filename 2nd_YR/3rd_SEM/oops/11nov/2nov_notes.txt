@@ -1,0 +1,14 @@
+unary -- only one var operator eg(++,--)
+binary -- only two var operator eg (+,-,/,*) 
+ternary -- three var operator eg . if else vala operator (? :)
+
+operator overloading 
+    for this to be donw two tyes:
+    member function,frienf function
+
+    what are rules for operator overloading?
+        1.at least one of the operands must be a user defined function
+        2.we cannot overload a new operator ie only existing operator(eg +.-,/,*);
+        3.there are six opertor that cannot be overloaded (? :,sizeof(),::,member.selector(dot operator),member pointer,casting operator);
+    advantages:::---
+        1.notation closesr to target domain

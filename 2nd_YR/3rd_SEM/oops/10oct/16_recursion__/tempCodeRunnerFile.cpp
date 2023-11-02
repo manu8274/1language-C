@@ -1,62 +1,79 @@
-#include <stdlib.h>
-#include <iostream>
-
-/*
-  Include directly the different
-  headers from cppconn/ and mysql_driver.h + mysql_util.h
-  (and mysql_connection.h). This will reduce your build time!
-*/
-#include "mysql_connection.h"
-
-#include <cppconn/driver.h>
-#include <cppconn/exception.h>
-#include <cppconn/resultset.h>
-#include <cppconn/statement.h>
-
+#include<iostream>
+#include<math.h>
 using namespace std;
 
-int main(void)
-{
-cout << endl;
-cout << "Running 'SELECT 'Hello World!' »
-   AS _message'..." << endl;
+// int sum(int n){
+//     if(n==0)    return 0;
+//     else    return n+sum(n-1);
+// }
 
-try {
-  sql::Driver *driver;
-  sql::Connection *con;
-  sql::Statement *stmt;
-  sql::ResultSet *res;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     cout<<"the sum upto "<<n<<"="<<sum(n);
+// }
 
-  /* Create a connection */
-  driver = get_driver_instance();
-  con = driver->connect("tcp://127.0.0.1:3306", "root", "root");
-  /* Connect to the MySQL test database */
-  con->setSchema("test");
 
-  stmt = con->createStatement();
-  res = stmt->executeQuery("SELECT 'Hello World!' AS _message");
-  while (res->next()) {
-    cout << "\t... MySQL replies: ";
-    /* Access column data by alias or column name */
-    cout << res->getString("_message") << endl;
-    cout << "\t... MySQL says it again: ";
-    /* Access column data by numeric offset, 1 is the first column */
-    cout << res->getString(1) << endl;
-  }
-  delete res;
-  delete stmt;
-  delete con;
+// int facto(int n){
+//     if(n==0)    return 1;
+//     else    return n*sum(n-1);
+// }
 
-} catch (sql::SQLException &e) {
-  cout << "# ERR: SQLException in " << __FILE__;
-  cout << "(" << __FUNCTION__ << ") on line " »
-     << __LINE__ << endl;
-  cout << "# ERR: " << e.what();
-  cout << " (MySQL error code: " << e.getErrorCode();
-  cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     cout<<"the facto upto "<<n<<"= "<<facto(n);
+// }
+
+// int facto(int n){
+//     if(n==0)    return 1;
+//     else    return n*facto(n-1);
+// }
+
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     if(n<0){
+//         cout<<"the facto upto "<<n<<"= "<<pow(-1,n)*(facto(n));
+//     }
+//     else{
+//         cout<<"the facto upto "<<n<<"= "<<(facto(n));
+//     }
+// }
+
+
+
+// int fibo(int a,int b,int n){
+//     if(n>0){
+//         cout<<b<<" ";
+//         fibo(b,a+b,n-1);
+//     }
+// }
+
+// int main(){
+//     int n;
+//     int a=0,b=1;
+//     cin>>n;
+//     cout<<a<<" ";
+//     fibo(a,b,n);
+// }
+
+//note::::::::::------four types but upto today two types - direct that cal itself , indirect that call itself via another funct 
+
+int fibo(int n){
+    if(n<=1)    return n;
+    else{
+        return fibo(n-1)+fibo(n-2);
+    }
 }
-
-cout << endl;
-
-return EXIT_SUCCESS;
+int main(){
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cout<<fibo(i)<<" ";
+    }
+    cout<<endl<<fibo(5-1);
 }

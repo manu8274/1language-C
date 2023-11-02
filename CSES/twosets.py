@@ -15,12 +15,14 @@ else:
     k=0
     le=0
     lstodd=[]
-    lo=0
+    lo=0 
     for i in range(2,n+1,2):
         if(s-k)%2!=0 and s-k<n:
             lsteven.append(s-k)
             le+=1
             break
+        elif(i==n):
+            
         else:
             k+=i
             lsteven.append(i)
