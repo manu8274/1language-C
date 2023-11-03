@@ -24,20 +24,46 @@ using namespace std;
 //     cout<<ch;
 // }
 
+// int main(){
+//     string str1;
+//     cout<<"enter the str1 : ";
+//     getline(cin,str1);
+//     string str2;
+//     cout<<"enter str2 : ";
+//     getline(cin,str2);
+//     string str3="";
+//     for(int i=0;i<str1.size();i++){
+//         int j=0;
+//         for(j=0;j<str2.size();j++){
+//             if(str1[i]==str2[j])    break;
+//         }
+//         if(j==str2.size())  str3+=str1[i];
+//     }
+//     cout<<str3;
+// }
+
+// #include<iostream>
+// #include<algorithm>
+// #include<stdlib.h>
+// using namespace std;
+
 int main(){
-    string str1;
-    cout<<"enter the str1 : ";
-    getline(cin,str1);
-    string str2;
-    cout<<"enter str2 : ";
-    getline(cin,str2);
-    string str3="";
-    for(int i=0;i<str1.size();i++){
-        int j=0;
-        for(j=0;j<str2.size();j++){
-            if(str1[i]==str2[j])    break;
-        }
-        if(j==str2.size())  str3+=str1[i];
+  int n;
+  cin>>n;
+  int arr[n];
+  for(int i=0;i<n;i++){
+    cin>>arr[i];
+  }
+  int l=0;
+  int arr1[l+1];
+  for(int i=0;i<n;i++){
+    string s = to_string(arr[i]);
+    for(int j=0;j<s.size();j++){
+      arr1[l++]=s[j]-'0';
     }
-    cout<<str3;
+  }
+
+  for(int i=0;i<l;i++){
+    cout<<arr1[i]<<"\t";
+  }
 }
