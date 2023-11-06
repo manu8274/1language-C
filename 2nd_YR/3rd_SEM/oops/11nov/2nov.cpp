@@ -77,5 +77,4 @@ int main(){
     // r3.functadd(r1,r2,r3);
     // cout<<r3.area()<<endl;
     // rect r4;
-    
 }
