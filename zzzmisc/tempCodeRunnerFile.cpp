@@ -14,31 +14,31 @@
 //   return 0;
 // }
 
-#include<iostream>
-#include<algorithm>
-#include<stdlib.h>
-using namespace std;
+// #include<iostream>
+// #include<algorithm>
+// #include<stdlib.h>
+// using namespace std;
 
-int main(){
-  int n;
-  cin>>n;
-  int arr[n];
-  for(int i=0;i<n;i++){
-    cin>>arr[i];
-  }
-  int l=0;
-  int arr1[l+1];
-  for(int i=0;i<n;i++){
-    string s = to_string(arr[i]);
-    for(int j=0;j<s.size();j++){
-      arr1[l++]=s[j]-'0';
-    }
-  }
+// int main(){
+//   int n;
+//   cin>>n;
+//   int arr[n];
+//   for(int i=0;i<n;i++){
+//     cin>>arr[i];
+//   }
+//   int l=0;
+//   int arr1[l+1];
+//   for(int i=0;i<n;i++){
+//     string s = to_string(arr[i]);
+//     for(int j=0;j<s.size();j++){
+//       arr1[l++]=s[j]-'0';
+//     }
+//   }
 
-  for(int i=0;i<l;i++){
-    cout<<arr1[i]<<"\t";
-  }
-}
+//   for(int i=0;i<l;i++){
+//     cout<<arr1[i]<<"\t";
+//   }
+// }
 // int main(){
 //   int j=127;
 //   string str1 = to_string(j);
@@ -46,3 +46,16 @@ int main(){
 //     cout<<str1[i]<<"\t";
 //   }
 // }
+
+
+#include<iostream>
+#include<algorithm>
+#include<stdlib.h>
+using namespace std;
+
+class my{};
+
+int main(){
+  my m;
+  cout<<sizeof(m);
+}

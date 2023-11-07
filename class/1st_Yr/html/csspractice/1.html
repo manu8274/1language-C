@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Toast Notification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/html/class_project/1.css">
+    <script src="https://kit.fontawesome.com/b0d922a056.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div style="align-items: center; text-align: center;"><img src="https://images.squarespace-cdn.com/content/52261ed5e4b0062e359f2751/1437153415476-ROWX52ZZ01NC11HFR1GY/?format=1000w&content-type=image%2Fjpeg" alt="clubs" title="welcome to clubs" width="60%" height="150px" style="border-radius: 5px;"></div>
+    <div>
+        <h1 style="text-align: center;">Registration for the clubs</h1>
+    </div>
+    <section>
+        <ad1 style="float: left;width:25%">
+            <iframe width="320" height="245" style="float: left;position: fixed;" src="https://www.youtube.com/embed/a96NO-thMfs?autoplay=1&start=1">
+            </iframe>
+        </ad1>
+        <form id="club" method="get" action="data.php" style="float:inline-start;width: 50%;">
+            <center>
+                    <div style="border-radius:15px;border: solid black 2px;background-color: aliceblue; width: 50%;height: 180px; text-align: justify;margin: 0px;font-size:20px; padding: 20px;line-height: 30px;">
+                    <label for="fname"> student name</label> <input type="text" placeholder="name" id="fname" name="fname" style="border-radius: 5px;height: 30px;"><br><br>
+                    <label for="froll">Full Roll no.</label> <input type="number" placeholder="roll no." id="froll" name="froll" style="border-radius: 5px;height: 30px;"><br><br>
+                    <label for="fmail">e-Mail</label> <input type="text" placeholder="email" id="femail" name="femail" style="border-radius: 5px;height: 30px;">
+                </div><br>
+                <div  style="border-radius: 15px;border: solid black 2px;background-color: aliceblue; width: 50%;height:50px; text-align: justify;margin: 0px;font-size:20px; padding: 20px;line-height: 30px;">
+                    choose your semester: <br>
+                    <select name="101" id="101" name="fsemester" style="border-radius: 5px;height: 30px;width: 100px;text-align: center;">
+                        <option value="sem">sem</option>
+                        <option value="sem 1">sem 1</option>
+                        <option value="sem 2">sem 2</option>
+                        <option value="sem 3">sem 3</option>
+                        <option value="sem 4">sem 4</option>
+                        <option value="sem 5">sem 5</option>
+                        <option value="sem 6">sem 6</option>
+                        <option value="sem 7">sem 7</option>
+                        <option value="sem 8">sem 8</option>
+                    </select>
+                </div><br>
+                <div  style="border-radius: 15px;border: solid black 2px;background-color: aliceblue; width: 50%;height:140px; text-align: justify;margin: 0px;font-size:20px; padding: 20px;line-height: 30px;">
+                    explain youself in one word :- <br><input type="text" placeholder="ex.honest,hardworker.etc." name="fyou" style="border-radius: 5px;width: 250px;height: 30px;"><br><br>
+                    rate yourself out of 5 :- <br>
+                    <input type="radio" id="102" name="frate"><label for="102">⭐</label>
+                    <input type="radio" id="103" name="frate"><label for="103">⭐⭐</label>
+                    <input type="radio" id="104" name="frate"><label for="104">⭐⭐⭐</label>
+                    <input type="radio" id="105" name="frate"><label for="105">⭐⭐⭐⭐</label>
+                    <input type="radio" id="106" name="frate"><label for="106">⭐⭐⭐⭐⭐</label>
+                </div><br>
+                <div  style="border-radius: 15px;border: solid black 2px;background-color: aliceblue; width: 50%;height:120px; text-align: justify;margin: 0px;font-size:20px; padding: 20px;line-height: 30px;">
+                    which club would you like to join ?<br>
+                    <select name="fclub" id="107"  style="border-radius: 5px;width: 100px;text-align: center;height: 30px;">
+                        <option style="animation: alternate;" value="select">select</option>
+                        <option class="opt" value="architecture club">architecture club</option>
+                        <option class="opt" value="basketbball club">basketbball club</option>
+                        <option class="opt" value="carrom club">carrom club</option>
+                        <option class="opt" value="chess club">chess club</option>
+                        <option class="opt" value="coding club">coding club</option>
+                        <option class="opt" value="communication club">communication club</option>
+                        <option class="opt" value="cricket club">cricket club</option>
+                        <option class="opt" value="debate club">debate club</option>
+                        <option class="opt" value="decoration club">decoration club</option>
+                        <option class="opt" value="electronics club">electronics club</option>
+                        <option class="opt" value="football club">football club</option>
+                        <option class="opt" value="math club">math club</option>
+                        
+                    </select><br>
+                    anything you want to share -: <br>
+                    <input type="text" placeholder="feedback" name="feedback" style="border-radius: 5px;height: 30px;">
+                </div>
+            </center>
+        </form>
+        <div class="button" style="align-items: center;text-align: center;">
+            <button onclick="showToast(successMsg)" id="submit">submit</button>
+            <button onclick="showToast(resetMsg)">reset</button>
+        </div>
+        <div id="toastbox"></div>
+    </section>
+    <script>
+        let toastbox=document.getElementById('toastbox');
+        let successMsg = '<i class="fa-solid fa-circle-check"></i> successfully submitted';
+        let resetMsg = '<i class="fa-solid fa-arrow-rotate-left"></i> form resetted';
+        function showToast(msg){
+            let toast = document.createElement('div');
+            toast.classList.add('toast');
+            toast.innerHTML = msg;
+            toastbox.appendChild(toast);
+            if(msg.includes('resetted')){
+                toast.classList.add('resetted');
+            }
+            if(msg.includes('successfully')){
+                toast.classList.add('successfully');
+            }
+            setTimeout(() => {
+                club.submit();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

@@ -1,7 +1,0 @@
-malloc() allocates size of byte and returns pointer to the frst byte of the allocated space.
-ptr = (int*) malloc(100 * sizeof(int)); Since the size of int is 4 bytes, this statement will allocate 400 bytes of memory. And, the pointer ptr holds the address of the first byte in the allocated memory.
-
-calloc()  Allocates space for an array of elements,initializes them to zero and then returns a pointer to the memory.
-ptr = (float*) calloc(25, sizeof(float));  This statement allocates contiguous space in memory for 25 elements each with the size of the float.
-
-realloc()   Modifies the size of previously allocated space.
