@@ -5,7 +5,8 @@
         "stdio.h": "c",
         "math.h": "c",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iosfwd": "cpp"
     },
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "java.debug.settings.onBuildFailureProceed": true,

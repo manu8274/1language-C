@@ -56,6 +56,5 @@ using namespace std;
 class my{};
 
 int main(){
-  my m;
-  cout<<sizeof(m);
+  cout<<sizeof(my);
 }

@@ -1,45 +1,6 @@
 #include<iostream>
 using namespace std;
 
-// let three point with object as their coordinates and names 
-// what we want to do is that to assign the value of p1 point cordinates negative to the p2 point
-
-// class point{
-//     int x,y;
-//     public:
-//         point(){
-
-//         }
-
-//         point(int a,int b):x(a),y(b){
-
-//         }
-
-//         point operator -( point &obj){
-//             point temp;
-//             temp.x=-obj.x;
-//             temp.y=-obj.y;
-//             return temp;
-//             // return point(-x,-y);
-//         }
-//         void print(){
-//             cout<<"x : "<<x<<"\t"<<"y : "<<y<<endl;
-//         }
-// };
-
-// int main(){
-//     point p1(2,3);
-//     point p2(4,5);
-//     point p3;
-//     p3=-p2;
-//     p3.print();
-// }
-
-
-////////////////////operator overloading for - binary type
-// #include<iostream>
-// using namespace std;
-
 // class pointminus{
 //     int x,y;
 //     public:
@@ -47,7 +8,7 @@ using namespace std;
 
 //         }
 
-//         pointminus(int a,int b){
+//         pointminus(int a=0,int b=0){
 //             x=a;
 //             y=b;
 //         }
@@ -71,28 +32,30 @@ using namespace std;
 //     p3.print();
 // }
 
-class point{
-    int a[2];
+class test{
+    int x;
     public:
-        point(int x=0,int y=0){
-            a[0]=x;
-            a[1]=y;
-        }
-        
-        int& operator [](int c){
-            return a[c];
+        test(int x=0):x(x)
+        {
 
         }
+        friend istream& operator >>(istream& input,test& obj);
+        friend ostream& operator <<(ostream& output,test& obj);
 
-        void print(){
-            cout<<"a[0] : "<<a[0]<<"\t"<<"a[1] : "<<a[1]<<endl;
-        }
 };
+istream& operator >>(istream& input,test& obj){
+            input>>obj.x;
+            return input;
+}//needs to be ceclared as a friend of class
+
+ostream& operator <<(ostream& output,test& obj){
+    output << obj.x;
+    return output;
+}
 
 int main(){
-    point p1(2,3);
-    //not possible
-    p1[0]=5; //expecting int value
-    p1[1]=6;
-    p1.print();
+    test t;
+    cin>>t;//not allowed need to be overloaded
+    cout<<t;//not allowed need to be overloaded
+    return 0;
 }
