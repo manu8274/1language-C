@@ -1,5 +1,5 @@
 {
-    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.errorSquiggles": "enabled",
     "files.associations": {
         "*.java": "java",
         "stdio.h": "c",
@@ -10,5 +10,8 @@
     },
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "java.debug.settings.onBuildFailureProceed": true,
-    "sqltools.connections": []
+    "sqltools.connections": [],
+    "audioCues.lineHasError": "on",
+    "java.help.collectErrorLog": true,
+    "debug.javascript.breakOnConditionalError": true
 }

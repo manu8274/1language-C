@@ -71,28 +71,28 @@ using namespace std;
 //     p3.print();
 // }
 
-class point{
-    int a[2];
-    public:
-        point(int x=0,int y=0){
-            a[0]=x;
-            a[1]=y;
-        }
+// class point{
+//     int a[2];
+//     public:
+//         point(int x=0,int y=0){
+//             a[0]=x;
+//             a[1]=y;
+//         }
         
-        int& operator [](int c){
-            return a[c];
+//         int& operator [](int c){
+//             return a[c];
 
-        }
+//         }
 
-        void print(){
-            cout<<"a[0] : "<<a[0]<<"\t"<<"a[1] : "<<a[1]<<endl;
-        }
-};
+//         void print(){
+//             cout<<"a[0] : "<<a[0]<<"\t"<<"a[1] : "<<a[1]<<endl;
+//         }
+// };
 
-int main(){
-    point p1(2,3);
-    //not possible
-    p1[0]=5; //expecting int value
-    p1[1]=6;
-    p1.print();
-}
+// int main(){
+//     point p1(2,3);
+//     //not possible
+//     p1[0]=5; //expecting int value
+//     p1[1]=6;
+//     p1.print();
+// }

@@ -1,61 +1,105 @@
 #include<iostream>
+#include<stdlib.h>
+#include<string>
+#include<algorithm>
+#include<bits\stdc++.h>
 using namespace std;
 
-// class pointminus{
-//     int x,y;
+// class abc{
 //     public:
-//         pointminus(){
+//         int x;
+//     abc operator +(abc &obj0){
+//         abc temp;
+//         temp.x=x+obj0.x;
+//         return temp;
+//     }
 
+// };
+
+// int main(){
+//     abc obj1,obj2,obj3;
+//     obj1.x=2;
+//     obj2.x=3;
+//     // obj3.x=obj1.x+obj2.x//alowed
+//     obj3=obj1 + obj2;//not allowed
+//     cout<<obj3.x<<endl;
+// }
+
+
+// class a{
+//     int real,imag;
+//     public:
+//         void input(){
+//             cin>>real>>imag;
 //         }
-
-//         pointminus(int a=0,int b=0){
-//             x=a;
-//             y=b;
-//         }
-
-//         pointminus operator -(pointminus &obj){
-//             pointminus temp;
-//             temp.x = abs(x - obj.x);
-//             temp.y = abs(y - obj.y);
+//         a operator +(a &obj0){
+//             a temp;
+//             temp.real=real+obj0.real;
+//             temp.imag=imag+obj0.imag;
 //             return temp;
 //         }
-//         void print(){
-//             cout<<"x : "<<x<<"\t"<<"y : "<<y<<endl;
+//         void output(){
+//             if(imag>0)  cout<<real<<" + "<<imag<<"i";
+//             else    cout<<real<<" - "<<-1*imag<<"i";
+//         }
+// };
+
+// class a{
+//     int real,imag;
+//     public:
+//         void input(){
+//             cin>>real>>imag;
+//         }
+//         a operator +(const a obj0){
+//             a temp;
+//             temp.real=real+obj0.real;
+//             temp.imag=imag+obj0.imag;
+//             return temp;
+//         }
+//         void output(){
+//             if(imag>0)  cout<<real<<" + "<<imag<<"i";
+//             else    cout<<real<<" - "<<-1*imag<<"i";
 //         }
 // };
 
 // int main(){
-//     pointminus p1(10,20);
-//     pointminus p2(5,10);
-//     pointminus p3;
-//     p3=p2-p1;
-//     p3.print();
+//     a obj1,obj2,obj3;
+//     cout<<"enter complex number 1 : ";
+//     obj1.input();
+//     cout<<"enter complex number 2 : ";
+//     obj2.input();
+//     obj3=obj1+obj2;
+//     obj3.output();
 // }
 
-class test{
-    int x;
+
+class unary{
+    int x,y;
     public:
-        test(int x=0):x(x)
-        {
+    unary()
+    {
 
+    }
+        void input(){
+            cin>>x>>y;
         }
-        friend istream& operator >>(istream& input,test& obj);
-        friend ostream& operator <<(ostream& output,test& obj);
+        void output(){
+            cout<<"value of x : "<<x<<endl<<"value of y : "<<y;
+        }
 
+        void operator ++(int){
+           
+            x++;
+            y++;             
+           
+        }
 };
-istream& operator >>(istream& input,test& obj){
-            input>>obj.x;
-            return input;
-}//needs to be ceclared as a friend of class
-
-ostream& operator <<(ostream& output,test& obj){
-    output << obj.x;
-    return output;
-}
 
 int main(){
-    test t;
-    cin>>t;//not allowed need to be overloaded
-    cout<<t;//not allowed need to be overloaded
-    return 0;
+    unary o1,o2,o3;
+    o1.input();
+    
+    o1++;
+    o1.output();
+
 }
