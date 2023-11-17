@@ -99,7 +99,7 @@ int main(){
     unary o1,o2,o3;
     o1.input();
     
-    o1++;
-    o1.output();
+    o1++;//o2=o1++ not hapenning bcs its assignment operator 
+    o2.output();
 
 }
