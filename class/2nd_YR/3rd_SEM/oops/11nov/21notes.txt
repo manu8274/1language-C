@@ -1,0 +1,13 @@
+if we use class b : public a == means all public members of class a are public in b and all protected are in b as protected
+but we cannot use private features
+if we choose private b then all except private b will private in c
+
+types of inheritance:
+    single level==a ->b
+    multi level===a->b->c
+    multiple level==multiple base classes(a,b --> c)
+    heirerchy level== tree structured inheritance a->b
+                                                  |->c
+    hybrid inheritance == ore than 1 types of inheritance, eg heirerchal and multiple
+
+if we use same function name using inheritance then the class used to call function will override the base class function 
