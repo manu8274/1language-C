@@ -1,0 +1,5 @@
+dynamic problem:
+    a->b|
+    |->c|->d 
+    print d.a::print() as d is not able to use scope 
+    so we use virtual function 
