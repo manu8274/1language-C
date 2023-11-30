@@ -51,10 +51,14 @@
 #include<iostream>
 #include<algorithm>
 #include<stdlib.h>
+#include<string.h>
 using namespace std;
 
 class my{};
 
 int main(){
-  cout<<sizeof(my);
+  int n=INT32_MAX;
+  char x[12];
+  getline(cin,x);
+  cout<<x;
 }
