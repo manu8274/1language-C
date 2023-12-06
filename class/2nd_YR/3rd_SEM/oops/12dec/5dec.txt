@@ -1,0 +1,18 @@
+4 things in STL 
+    1. containers
+    2. Iterators
+    3. Algorithma
+    4. Functors
+
+CONTAINERS::::
+    1. sequential 
+
+Iterators:::::
+
+
+ALGORITHMS::::
+    upperbound,lowerbound,accumulate,nextpermutation,prevpremutation,sort,etc
+
+FUNCTORS::::::
+    classes which acces function
+

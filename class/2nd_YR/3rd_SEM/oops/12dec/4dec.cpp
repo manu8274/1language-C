@@ -29,11 +29,11 @@ using namespace std;
 /////////////////////////////FUNCTION TEMPLATE ::::::::::::::::::::::::::::::::::::::--- it work with multiple data types
 
 // int sum(int a,int b){
-//     return a*b;
+//     return a*(2*b);
 // }
 
-// template<class x,class y>
-// x sum(x a,y b){
+// template<class x>
+// x sum(x a,x b){
 //     return a+b;
 // }
 
