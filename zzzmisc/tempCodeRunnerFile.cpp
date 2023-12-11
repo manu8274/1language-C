@@ -57,8 +57,7 @@ using namespace std;
 class my{};
 
 int main(){
-  int n=INT32_MAX;
-  char x[12];
+  string x;
   getline(cin,x);
-  cout<<x;
+  cout<<x<<"ahlbl "<<x;
 }

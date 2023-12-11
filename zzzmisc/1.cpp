@@ -59,5 +59,5 @@ class my{};
 int main(){
   string x;
   getline(cin,x);
-  cout<<x;
+  cout<<x<<" ahlbl "<<x;
 }
