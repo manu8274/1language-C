@@ -45,47 +45,61 @@ using namespace std;
 // infix to postfix
 
 int priority(char op){
-    if(op=='+' || op=='-')  return 1;
-    else if(op=='*' || op=='/') return 2;
-    else if(op=='^')    return 3;
-    else    return -1;
+    switch (op)
+    {
+    case '+':
+    case '-':
+        return 1;
+    case '*':
+    case '/':
+        return 2;
+    case '^':
+        return 3;
+    default:
+        return -1;
+    }
+}
+
+int isop(char op){
+    return (op=='+' || op=='-' || op=='*' || op=='/' || op=='^');
 }
 
 int main(){
-    string x="(a+b)+(c+d)";
+    string s;
+    getline(cin,s);
+    string pf;
     stack<char> st;
-    vector<char> result;
-    for(int i=0;i<x.size();i++){
-        char c=x[i];
-        if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')){
-            result.push_back(c);
+    for (int i = 0; i < s.size(); i++)
+    {
+        if(s[i]==' ' || s[i]=='\t'){
+            continue;
         }
-        else if(x[i]=='('){
-            st.push(c);
+        if((s[i]>='0' && s[i]<='9') || (s[i]>='a' && s[i]<='z') || (s[i]>='A' && s[i]<='Z')){
+            pf+=s[i];
         }
-        else if(x[i==')']){
-            while(st.top()=='('){
-                result.push_back(st.top());
+        else if(s[i]=='('){
+            st.push(s[i]);
+        }
+        else if(s[i]==')'){
+            while(!st.empty() && st.top()!='('){
+                pf+=st.top();
                 st.pop();
             }
             st.pop();
         }
-        else{
-            while(!st.empty() && priority(x[i])<=priority(st.top())){
-                result.push_back(st.top());
+        else if(isop(s[i])){
+            while(!st.empty() && priority(s[i])<=priority(st.top())){
+                pf+=st.top();
                 st.pop();
             }
-            st.push(c);
+            st.push(s[i]);
         }
     }
     while(!st.empty()){
-        result.push_back(st.top());
+        pf+=st.top();
         st.pop();
     }
-    for(int i=0;i<result.size();i++){
-        cout<<result[i];
-    }
-    cout<<endl;
+
+    cout<<pf;
     return 0;
 }
-

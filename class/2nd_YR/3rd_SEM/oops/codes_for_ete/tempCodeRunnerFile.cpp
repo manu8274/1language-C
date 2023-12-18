@@ -88,7 +88,7 @@ int main(){
             st.pop();
         }
         else if(isop(s[i])){
-            while(!st.empty() && priority(s[i])<=priority(s[i])){
+            while(!st.empty() && priority(s[i])<=priority(st.top())){
                 pf+=st.top();
                 st.pop();
             }
