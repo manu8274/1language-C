@@ -8,7 +8,7 @@ public class lec_4_loops {
         int n=10;
         while(n>0){
             System.out.println(n);
-            n=n-1;
+            n=n-5;
         }
     }
 }
