@@ -3,6 +3,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "lec_4_conditionals",
+            "request": "launch",
+            "mainClass": "JAVA.lec3_.lec_4_conditionals",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "a_typecasting",
+            "request": "launch",
+            "mainClass": "JAVA.lec3_.a_typecasting",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "c_input",
+            "request": "launch",
+            "mainClass": "JAVA.lec1_3.c_input",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "b_dataypes",
+            "request": "launch",
+            "mainClass": "JAVA.lec1_3.b_dataypes",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "a",
+            "request": "launch",
+            "mainClass": "JAVA.lec1_3.a",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "c_input",
+            "request": "launch",
+            "mainClass": "JAVA.c_input",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "b_dataypes",
+            "request": "launch",
+            "mainClass": "JAVA.b_dataypes",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "a",
+            "request": "launch",
+            "mainClass": "JAVA.a",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "dataypes",
+            "request": "launch",
+            "mainClass": "JAVA.dataypes",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "add",
+            "request": "launch",
+            "mainClass": "JAVA.add",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "c",
+            "request": "launch",
+            "mainClass": "JAVA.c",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
             "name": "factors",
             "request": "launch",
             "mainClass": "begin.factors",
