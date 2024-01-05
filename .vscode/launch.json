@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "lec_5_pattern1",
+            "request": "launch",
+            "mainClass": "JAVA.lec3_.lec_5_pattern1",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
             "name": "lec_4_loops",
             "request": "launch",
             "mainClass": "JAVA.lec3_.lec_4_loops",
