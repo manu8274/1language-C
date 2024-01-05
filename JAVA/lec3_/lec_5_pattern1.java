@@ -98,6 +98,16 @@ public class lec_5_pattern1 {
         //     System.out.println();
         // }
         // sc.close();
-    
+    //13.0 interesting ode alphabets
+        // Scanner sc=new Scanner(System.in);
+        // int x;
+        // x=sc.nextInt();
+        // for(int i=1;i<=x;i++){
+        //     for(int j=0;j<i;j++){
+        //         System.out.print((char)('A' + x -i +j));
+        //     }
+        //     System.out.println();
+        // }
+        // sc.close();
     }
 }
