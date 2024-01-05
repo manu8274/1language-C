@@ -54,6 +54,16 @@ public class lec_5_pattern1 {
         //     }
         //     System.out.println();
         // }
+    //10.0 code alpha pattern
+        // Scanner sc=new Scanner(System.in);
+        // int x;
+        // x=sc.nextInt();
+        // for(int i=1;i<=x;i++){
+        //     for(int j=0;j<i;j++){
+        //         System.out.print((char)('A' + i -1));
+        //     }
+        //     System.out.println();
+        // }
     
     }
 }
