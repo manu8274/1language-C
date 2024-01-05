@@ -64,6 +64,40 @@ public class lec_5_pattern1 {
         //     }
         //     System.out.println();
         // }
+    //11.0 character pattern 
+        // Scanner sc=new Scanner(System.in);
+        // int x;
+        // x=sc.nextInt();
+        // for(int i=1;i<=x;i++){
+        //     char ch=(char)('A' + i -1);
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print((char)(ch + j -1));
+        //     }
+        //     System.out.println();
+        // }
+        // Scanner sc=new Scanner(System.in);
+        // int x;
+        // x=sc.nextInt();
+        // for(int i=1;i<=x;i++){
+        //     // char ch=(char)('A' + i -1);
+        //     for(int j=1;j<=i;j++){
+        //         System.out.print((char)('A' + j +i  -2));
+        //     }
+        //     System.out.println();
+        // }
+        // Scanner sc=new Scanner(System.in);
+        // int x;
+        // x=sc.nextInt();
+        // int t=0;
+        // for(int i=0;i<x;i++){
+        //     // char ch=(char)('A' + i -1);
+        //     for(int j=0;j<=i;j++){
+        //         System.out.print((char)('A' + t));
+        //         t+=1;
+        //     }
+        //     System.out.println();
+        // }
+        // sc.close();
     
     }
 }
