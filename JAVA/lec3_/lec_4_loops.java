@@ -53,7 +53,7 @@ public class lec_4_loops {
         //     if(x%i==0)  System.out.print((i) + " " + (x/i) + " ");
         // }
         // System.out.println();
-
+        
         
     }
 }
