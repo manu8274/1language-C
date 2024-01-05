@@ -44,6 +44,16 @@ public class lec_5_pattern1 {
         //     }
         //     System.out.println();
         // }
+    //8.0 reverse code pattern 
+        // Scanner sc=new Scanner(System.in);
+        // int x;
+        // x=sc.nextInt();
+        // for(int i=1;i<=x;i++){
+        //     for(int j=i;j>0;j--){
+        //         System.out.print(j + " ");
+        //     }
+        //     System.out.println();
+        // }
     
     }
 }
