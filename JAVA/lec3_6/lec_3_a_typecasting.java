@@ -1,4 +1,4 @@
-package JAVA.lec3_;
+package JAVA.lec3_6;
 
 public class lec_3_a_typecasting {
     public static void main(String args[]){

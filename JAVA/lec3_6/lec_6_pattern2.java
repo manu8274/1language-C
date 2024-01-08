@@ -1,4 +1,4 @@
-package JAVA.lec3_;
+package JAVA.lec3_6;
 
 import java.util.Scanner;
 
