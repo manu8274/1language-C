@@ -79,5 +79,6 @@
     "sqltools.connections": [],
     "audioCues.lineHasError": "on",
     "java.help.collectErrorLog": true,
-    "debug.javascript.breakOnConditionalError": true
+    "debug.javascript.breakOnConditionalError": true,
+    "cmake.configureOnOpen": true
 }

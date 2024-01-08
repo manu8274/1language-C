@@ -228,6 +228,12 @@
             "name": "http://127.0.0.1:3000/html/1class/5_1.html",
             "request": "launch",
             "url": "http://127.0.0.1:3000/html/1class/5_1.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3002/class/2nd_YR/4th_SEM/FEE_II/01_JAN/08jan.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3002/class/2nd_YR/4th_SEM/FEE_II/01_JAN/08jan.html"
         }
     ]
 }
