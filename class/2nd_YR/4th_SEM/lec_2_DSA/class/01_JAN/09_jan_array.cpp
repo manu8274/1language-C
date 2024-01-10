@@ -60,33 +60,33 @@ using namespace std;
 //     return 0;
 // }
 
-////2)BINARY SEARCH
+// ////2)BINARY SEARCH
 
-int binsrch(int *arr,int size,int key){
-    int start=0;
-    int end=size-1;
-    int mid=(start+end)/2;
+// int binsrch(int *arr,int size,int key){
+//     int start=0;
+//     int end=size-1;
+//     int mid=(start+end)/2;
 
-    while(start<=end){
-        if(key<arr[mid]){
-            end=mid-1;
-            mid=(start+end)/2;
-        }
-        else if(key==arr[mid])  return mid;
-        else{
-            start=mid+1;
-            mid=(start+end)/2;
-        }
-    }
-    return -1;
-}
+//     while(start<=end){
+//         if(key<arr[mid]){
+//             end=mid-1;
+//             mid=(start+end)/2;
+//         }
+//         else if(key==arr[mid])  return mid;
+//         else{
+//             start=mid+1;
+//             mid=(start+end)/2;
+//         }
+//     }
+//     return -1;
+// }
 
-int main(){
-    int arr[]={1,2,3,4,5,6,7,8,9,10};
-    int k;
-    cin>>k;
-    int x=binsrch(arr,10,k);
-    if(x==-1)   cout<<"NOT FOUND"<<endl;
-    else    cout<<"YOUR ELEMENT IS AT INDEX "<<x<<endl;
-    return 0;
-}
+// int main(){
+//     int arr[]={1,2,3,4,5,6,7,8,9,10};
+//     int k;
+//     cin>>k;
+//     int x=binsrch(arr,10,k);
+//     if(x==-1)   cout<<"NOT FOUND"<<endl;
+//     else    cout<<"YOUR ELEMENT IS AT INDEX "<<x<<endl;
+//     return 0;
+// }
