@@ -55,16 +55,33 @@ using namespace std;
 // Return an integer representing total number of such pairs. 
 
 int main(){
-    int n;
-    cin>>n;
-    vector<int>arr;
-    for(int i=0;i<n;i++){
-        int x;
-        cin>>x;
-        arr.push_back(x);
-    }
+    int n=5;
+    // cin>>n;
+    vector<int>arr={1, 3, 3, 9, 4};
+    // for(int i=0;i<n;i++){
+    //     int x;
+    //     cin>>x;
+    //     arr.push_back(x);
+    // }
     // for(int i=0;i<n;i++){
     //     cout<<arr[i];
     // }
-    
+    int x=2;
+    unordered_map<int,int> map;
+    for(int i=0;i<n;i++){
+        if(map.count(arr[i])>0){
+            map[arr[i]]+=1;
+        }
+        else{
+            map[arr[i]]=1;
+        }
+    }
+    // for(int i=0;i<map.size();i++){
+    //     cout<<i<<" "<<map[i]<<"\t";
+    // }
+    int c=0;
+    for(int i=0;i<map.size();i++){
+        
+    }
+    cout<<c;
 }
