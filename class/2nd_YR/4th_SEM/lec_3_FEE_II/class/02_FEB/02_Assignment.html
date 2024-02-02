@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #req{
+            background-color: green;
+        }
+        #req:focus{
+            background-color: red;}
+    </style>
+</head>
+<body bgcolor="greem">
+    <form action="02_Assignment_2.html">
+        <fieldset style="border: 5px;border-style: double;border-color: red;box-shadow: 4px 4px blue;">
+            <legend>SignUp Form</legend>
+            <div class="div1" style="border: 2px solid blue;box-shadow: 4px 4px white;padding:15px;align-items: center;text-align: center;margin-left: 25%;margin-right: 25%;margin-top: 20px;margin-bottom: 20px;">
+                <table border="1px solid black" cellpadding="10px" cellspacing="0px" style="margin-right: 25%;margin-left: 25%;margin-top: 20px;margin-bottom: 20px;border-color: blue;box-shadow: 4px 4px 1px white;padding-left:15px;padding-right: 15px;padding-top: 5px;padding-bottom: 5px;">
+                    <tr><th colspan="2" style="box-shadow: 1px 1px 1px blue inset;align-self: center;color: blue;"><u>PLEASE FILL THE BELOW SIGN UP FORM</u></th></tr>
+                    <tr><td>Username</td><td><input id="req" type="text" required placeholder="required" ></td></tr>
+                    <tr><td>Firstname</td><td><input id="req" type="text" required placeholder="required"></td></tr>
+                    <tr><td>Lastname</td><td><input type="text"></td></tr>
+                    <tr><td>EMAIL</td><td><input id="req" type="text" required placeholder="required"></td></tr>
+                    <tr><td>Gender</td><td>male<input type="radio" name="gen">female<input type="radio" name="gen" ></td></td></tr>
+                    <tr><td colspan="2"><button type="submit" style="box-shadow: 3px 3px blue;border-radius: 5px;">SUBMIT</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset" style="box-shadow: 3px 3px blue;border-radius: 5px;">RESET</button></td></tr>
+                </table>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

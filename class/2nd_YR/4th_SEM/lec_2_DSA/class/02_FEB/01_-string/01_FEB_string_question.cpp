@@ -47,4 +47,5 @@ int main(){
             buyday=i;
         }
     }
+    cout<<profit;
 }
