@@ -1,0 +1,13 @@
+/* .container{
+    width: 1260px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 430px 430px 430px;
+    /* number of values define number of columns and their width 
+    grid-template-rows: 200px 200px 200px;
+    /* number of values define number of row and their width 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+} */
