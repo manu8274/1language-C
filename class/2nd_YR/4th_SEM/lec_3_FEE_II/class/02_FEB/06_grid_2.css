@@ -2,6 +2,23 @@
     margin: 0px;
     padding: 0px;
 }
+.chess{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.black{background-color: black;
+}
+.white{
+    background-color: white;
+}
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
 .container{
     width: 100vw;
     height: 100vh;
@@ -41,7 +58,7 @@
 }
 .item6{
     grid-area: 4/1/5/4;
-}
+} */
 
 /* *{
     margin: 0px;

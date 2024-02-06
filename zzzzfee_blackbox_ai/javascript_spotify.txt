@@ -1,0 +1,21 @@
+// Login form handling
+const loginForm = document.querySelector('#login form');
+loginForm.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	const email = loginForm.email.value;
+	const password = loginForm.password.value;
+
+	// Call API to log in user
+});
+
+// Sign up form handling
+const signupForm = document.querySelector('#signup form');
+signupForm.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	const email = signupForm.email.value;
+	const password = signupForm.password.value;
+
+	// Call API to sign up user
+});
