@@ -21,8 +21,7 @@ using namespace std;
 //     return 0;
 // }
 
-//for last occurance
-
+//for last occurance:::::::::::::::::::::::::::::::::::::
 // int pos(int arr[],int n,int k){
 //     if(arr[n-1]==k) return n-1;
 //     else    return pos(arr,n-1,k);
@@ -40,7 +39,7 @@ using namespace std;
 // }
 
 
-//for first occurance
+//for first occurance:::::::::::::::::::::::::::::::::::::::::
 // int pos(int arr[],int n,int k){
 //     if(n==0){
 //         return -1;
