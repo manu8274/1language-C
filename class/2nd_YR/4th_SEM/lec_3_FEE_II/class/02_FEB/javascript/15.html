@@ -3,6 +3,7 @@
 <head>
     <title>15_feb_2024</title>
     <script>
+        //:::::::::::::typecasting
         // var num1=(prompt("ENTER NUM1: "));//prompt is attribute of window object and window ob ject is default object of OS
         // var num2=(prompt("ENTER NUM2: "));
         // sum=num1+num2;
@@ -18,11 +19,16 @@
         // console.log(sum);
         // document.write(typeof(sum))
         /////////////////////////////////for float
-        var num1=parseFloat(prompt("ENTER NUM1: "));//prompt is attribute of window object and window ob ject is default object of OS
-        var num2=parseFloat(prompt("ENTER NUM2: "));
-        var sum=num1+num2;
-        console.log(sum);
-        document.write(typeof(sum))
+        // var num1=parseFloat(prompt("ENTER NUM1: "));//prompt is attribute of window object and window ob ject is default object of OS
+        // var num2=parseFloat(prompt("ENTER NUM2: "));
+        // var sum=num1+num2;
+        // console.log(sum);
+        // document.write(typeof(sum))
+        let x=12.3;
+        let y=13.2;
+        sum=String(x)+String(y);
+        document.write("concatenation = ",sum,"<br>");
+        document.write(typeof(sum)+"<br>");
     </script>
 </head>
 </html>
