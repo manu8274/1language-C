@@ -36,3 +36,30 @@ using namespace std;
 //     else    cout<<"FALSE";
 // }
 
+//////////////remover duplicate and return sorted string
+
+void fun(string st){
+    // set<char>ts(st.begin(),st.end());
+    // string t;
+    // for(auto x:ts){
+    //     t.push_back(x);
+    // }
+    // return t;
+    map<char,int>mp;
+    for(int i=0;i<st.size();i++){
+        if(mp.find(st[i])!=mp.end()){
+            mp[st[i]]++;
+        }
+        else{
+            mp[st[i]]=1;
+        }
+    }
+    for(auto x=mp.begin();x!=mp.end();++x){
+        cout<< x->first<<'\t'<<x->second<<'\t';
+    }
+}
+int main(){
+    string c;
+    getline(cin,c);
+    fun(c);
+}
