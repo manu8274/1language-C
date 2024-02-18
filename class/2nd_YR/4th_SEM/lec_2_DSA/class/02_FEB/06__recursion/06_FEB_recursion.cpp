@@ -24,4 +24,4 @@ int main(){
     int arr[]={1,2,3,6,5};
     bool b=check(arr,5);
     cout<<b;
-}
+}   
