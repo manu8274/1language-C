@@ -2,8 +2,78 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <!-- <script>
+        marks={
+            maths:97,
+            sc:90,
+            lang:96
+        };
+        for (item in marks){
+            console.log(item,marks[item]);
+        }
+    </script> -->
+    <script>
+        let v=parseInt(prompt());
+        for(i=1;i<=v;i++){
+            document.write(i +" : ");
+            for(j=1;j<=i;j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>    
 </head>
 <body>
-    
 </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let r=parseInt(prompt("enter rows : "));
+        let c=parseInt(prompt("enter cols : "));
+        document.write("<table border='1' align='center' width='50%'>");
+        num=1;
+        for(i=1;i<=r;i++){
+            document.write("<tr>");
+                for(j=1;j<=c;j++){
+                    document.write("<td style=text-align:center;>" + num);
+                    num+=1;
+                }
+            document.write("</tr>");
+        }
+        document.write("</table>")
+    </script>
+</head>
+<body>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let r=parseInt(prompt("enter rows : "));
+        let c=parseInt(prompt("enter cols : "));
+        document.write("<table border='1' align='center' width='50%'>");
+        num=1;
+        for(i=1;i<=r;i++){
+            document.write("<tr>");
+                for(j=1;j<=c;j++){
+                    document.write("<td style=text-align:center;>" + num);
+                    num+=1;
+                }
+            document.write("</tr>");
+        }
+        document.write("</table>")
+    </script>
+</head>
+<body>
+</body>
+</html> -->
