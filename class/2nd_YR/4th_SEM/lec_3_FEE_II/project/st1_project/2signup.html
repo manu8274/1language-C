@@ -1,79 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <style>
-            * {
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #f6f6f6;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-
-        .signup-box {
-            width:500px;
-            height: 600px;
-            background-color: #fff;
-            color: #000;
-            top: 50%;
-            left: 50%;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-        }
-
-        h1 {
-            text-align: center;
-            margin: 0 0 20px;
-            padding: 20px;
-        }
-
-        .signup-box p {
-            text-align: center;
-            padding: 0 0 5px;
-        }
-
-        .signup-box input[type="text"], .signup-box input[type="password"] {
-            width: 70%;
-            padding: 15px;
-            margin-left: 15%;
-            border: 1px solid black;
-            border-radius: 5px;
-        }
-
-        .signup-box input[type="submit"] {
-            width: 70%;
-            padding: 15px;
-            margin: 10px 0 0;
-            border: none;
-            background-color: #000;
-            color: #fff;
-            margin-left: 15%;
-        }
-
-        .signup-box input[type="submit"]:hover {
-            cursor: pointer;
-            background-color: #007bff;
-        }
-        </style>
-    </head>
-    <body>
-        <div class="signup-box">
-        <h1>Sign Up</h1>
-            <form action="2_5signupconfirm.html">
-                <p>Name</p>
-                <input type="text" name="name" placeholder="Enter Name" required>
-                <p>Email</p>
-                <input type="text" name="email" placeholder="Enter Email" required>
-                <p>Password</p>
-                <input type="password" name="password" placeholder="Enter Password" required>
-                <p>Confirm Password</p>
-                <input type="password" name="confirmpassword" placeholder="Enter Password Again" required><br>
-                <br><input type="submit" value="Sign Up">
-            </form>
+<head>
+	<script src="https://kit.fontawesome.com/b0d922a056.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="2signup.css">
+</head>
+<body>
+	<header>
+	    <i class="fa-brands fa-spotify" style="color: white;">&nbsp;Spotify</i>
+    </header>
+    <div class="container">
+        <div class="item">
+            <h1 style="font-family: Arial, Helvetica, sans-serif;">SIGN UP TO START LISTENING</h1>
+            <br>
+            <label for="email" style="padding-bottom: 15px;" >Email-address</label> <br>
+            <input type="text" id="email" placeholder="name@domain.com"><br>
+            <a href="" id="phone">Use phone number instead.</a>
+            <br>
+            <button id="next">Next</button>
+            <br><br>
+            <hr width="150vw" style="float: left;" >&nbsp;&nbsp;OR<hr width="150vw" style="float: right;">
+            <button id="social"><i class="fa-brands fa-google "></i>&nbsp;&nbsp;&nbsp;&nbsp;Continue with Google</button>
+			<button id="social"><i class="fa-brands fa-facebook" style="color: #708bf9;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Continue with Facebook</button>
+			<button id="social"><i class="fa-brands fa-apple" style="color: #ffffff;font-size: 21px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Continue with Apple</button>
+            <hr><br>
+            <p style="text-align: center;">Already have an account?<a href="" style="color: white;">Log in here</a>.</p>
         </div>
-    </body>
+    </div>
+</body>
 </html>
