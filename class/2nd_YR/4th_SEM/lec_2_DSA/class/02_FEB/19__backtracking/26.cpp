@@ -74,7 +74,7 @@ using namespace std;
 
 //grid base problem
 
-int ratinmaze(int row,int col,int i,int j,string str){
+int grid(int row,int col,int i,int j,string str){
     if(i>row-1 || j>col-1){
         return 0;
     }
@@ -84,9 +84,9 @@ int ratinmaze(int row,int col,int i,int j,string str){
     }
     int c=0;
     
-    c+=ratinmaze(row,col,i+1,j,str+"R");
+    c+=grid(row,col,i+1,j,str+"R");
         // c+=ratinmaze(row,col,i+1,j+1);
-    c+=ratinmaze(row,col,i,j+1,str+"D");
+    c+=grid(row,col,i,j+1,str+"D");
     return c;
 }
 
@@ -96,6 +96,6 @@ int main(){
     int n,m;
     cin>>m>>n;
     // string str;
-    int x=ratinmaze(m,n,0,0,"");//row,col,i,j
+    int x=grid(m,n,0,0,"");//row,col,i,j
     cout<<x;
 }
