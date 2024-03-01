@@ -77,8 +77,10 @@
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "java.debug.settings.onBuildFailureProceed": true,
     "sqltools.connections": [],
-    "audioCues.lineHasError": "on",
     "java.help.collectErrorLog": true,
     "debug.javascript.breakOnConditionalError": true,
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "accessibility.signals.lineHasError": {
+        "sound": "on"
+    }
 }
