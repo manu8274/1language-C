@@ -127,3 +127,11 @@ button{
 .form-switch .form-check-input:checked {
     background-color: green;
 }
+
+.header a{
+	color: white;
+	text-decoration: none;
+}
+.header{
+	text-align: justify;
+}
