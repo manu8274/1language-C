@@ -61,14 +61,24 @@ body {
 	height: 40px;
     margin-left: 25%;
     margin-right: 25%;
-	background-color: #f2f2f2;
+	color: white;
+	background-color: #121212;
 	border: none;
 	padding: 0 10px;
 	box-sizing: border-box;
 	margin-bottom: 10px;
 	border-radius: 3px;
+	border: 1px solid rgb(147, 147, 147);
 }
-
+.login-container input[type="password"]:hover{
+	border: 2px solid white;
+}
+.login-container input[type="text"]:hover{
+	border: 2px solid white;
+}
+/* .login-container input[type="password"]::after{
+	background-color: #121212;
+} */
 .login-container input[type="checkbox"] {
 	margin-right: 10px;
 }
