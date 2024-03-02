@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="zlogin.css">
+	<link rel="stylesheet" type="text/css" href="zlogin_1.css">
+	<link rel="stylesheet" href="/class/2nd_YR/4th_SEM/lec_3_FEE_II/bootstrap-5.3.2-dist/css/bootstrap.min.css">
 	<script src="https://kit.fontawesome.com/b0d922a056.js" crossorigin="anonymous"></script>
 	<style>
 	.fa-google {
@@ -14,11 +15,11 @@
 </head>
 <body>
 	<div class="bodyh">
-	<h1><i class="fa-brands fa-spotify" style="color: white;">&nbsp;Spotify</i></h1>
+	<h1 style="color: white;font-size: 20px;padding-left: 20px;font-family: sans-serif;"><i class="fa-brands fa-spotify" style="color: white;font-size: 30px;">&nbsp;</i>Spotify</h1>
 	</div><br><br>
 	<div class="login-container">
 		<br>
-		<h1>Log In To Spotify</h1><br>
+		<h1 style="font-size: 55px;">Log In To Spotify</h1><br>
 		<div class="social-login">
 			<button><i class="fa-brands fa-google "></i>&nbsp;&nbsp;&nbsp;&nbsp;Continue with Google</button>
 			<button><i class="fa-brands fa-facebook" style="color: #0033ff;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Continue with Facebook</button>
@@ -26,22 +27,24 @@
 			<button>Continue with phone number</button>
 		</div>
         <br>
-        <hr color="white" width="100%"><br>
+        <hr class="hr"><br>
 		<form>
 			<label for="email"  style="margin-left: 25%;margin-right: 25%;color: white;">Email or username:</label><br>
 			<input type="text" id="email" name="email"><br>
 			<label for="password"  style="margin-left: 25%;margin-right: 25%;color: white;">Password:</label><br>
 			<input type="password" id="password" name="password"><br>
-			<input type="checkbox" id="remember" name="remember"  style="margin-left: 25%;margin-right: 25%;">
-			<label for="remember"  style="margin-left: 25%;margin-right: 25%;color: white;">Remember me</label><br>
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="margin-left:20%;">
+				<label for="remember"  style="margin-left: 25%;margin-right: 25%;color: white;">Remember me</label><br>
+			</div>
 			<button type="submit">Log In</button>
             <br><br>
-			<p style="color: white;display: inline;margin-left:25%;">DON'T REMEMBER PASSWORD&nbsp;&nbsp;&nbsp;</p>
-            <a href="" class="forgot">Forgot Your Password</a>
-			<br><br><hr color="white" width="100%"><br><br>
+            <a href="" class="forgot">Forgot Your Password?</a>
+			<br><br><hr class="hr"><br>
 			<p style="color: white;display: inline;margin-left:25%;">DON'T HAVE AN ACCOUNT ? &nbsp;&nbsp;&nbsp;</p>
             <a href="" class="sign">Sign up for Spotify</a>
 		</form>
+		<br>
 	</div>
 	<br><br>
 </body>
