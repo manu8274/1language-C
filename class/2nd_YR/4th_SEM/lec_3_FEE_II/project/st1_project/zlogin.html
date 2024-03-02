@@ -12,10 +12,21 @@
 		-webkit-text-fill-color: transparent;
 	}
 	</style>
+	<script>
+		function myfunction() {
+		var x = document.getElementById("password");
+			if (x.type === "password") {
+				x.type = "text";
+			}
+			else {
+				x.type = "password";
+			}
+		}
+	</script>
 </head>
 <body>
 	<div class="bodyh">
-	<h1 class="header" style="color: white;font-size: 20px;padding-left: 20px;font-family: sans-serif;"><a href="index.html"><i class="fa-brands fa-spotify" style="color: white;font-size: 30px;">&nbsp;</i>Spotify</a></h1>
+	<h1 class="header" style="color: white;font-size: 20px;padding-left: 20px;font-family: sans-serif;"><a href="index.html"><i class="fa-brands fa-spotify" style="color: white;font-size: 30px;">&nbsp;<font style="font-size: 20px;vertical-align: middle;font-family:sans-serif;">Spotify</font></i></a></h1>
 	</div><br><br>
 	<div class="login-container">
 		<br>
@@ -37,17 +48,6 @@
 				<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="margin-left:20%;" onclick="myfunction()">
 				<label for="remember"  style="margin-left: 25%;margin-right: 25%;color: white;">Show Password</label><br>
 			</div>
-			<script>
-				function myfunction() {
-				var x = document.getElementById("password");
-					if (x.type === "password") {
-						x.type = "text";
-					}
-					else {
-						x.type = "password";
-					}
-				}
-			</script>
 			<div class="form-check form-switch">
 				<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="margin-left:20%;">
 				<label for="remember"  style="margin-left: 25%;margin-right: 25%;color: white;">Remember me</label><br>
