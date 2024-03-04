@@ -87,7 +87,7 @@ class lindeklist
 
     int search_by_val_iter(int val){
         Node *itr=head;
-        int c=1;
+        int c=0;
         while(itr!=nullptr){
             if(itr->get_data()==val) return c;
             c++;
@@ -104,5 +104,15 @@ class lindeklist
             return true;
         }
         return search_by_val_recur(val,iter->next);
+    }
+    // 03 march
+    int search_by_val_recur_index(int val,Node *iter,int c){
+        if(iter==nullptr){
+            return -1;
+        }
+        if(val==iter->get_data()){
+            return c;
+        }
+        return search_by_val_recur_index(val,iter->next,c+1);
     }
 };
