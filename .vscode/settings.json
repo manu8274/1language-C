@@ -82,5 +82,6 @@
     "cmake.configureOnOpen": true,
     "accessibility.signals.lineHasError": {
         "sound": "on"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
