@@ -3,7 +3,18 @@
 <head>
     <title>Document</title>
     <script>
-        
+        // change case of character
+        var x="ABCDefgh";
+        var x1="";
+        for(i=0;i<x.length;i++){
+            if(x[i]==x[i].toUpperCase()){
+                x1+=x[i].toLowerCase();
+            }
+            else{
+                x1+=x[i].toUpperCase();
+            }
+        }
+        console.log(x1)
     </script>
 </head>
 <body>
