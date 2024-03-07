@@ -3,7 +3,27 @@
 <head>
     <title>Document</title>
     <script>
-        
+        // change case of character
+        var x=prompt();
+        var x1="";
+        for(i=0;i<x.length;i++){
+            if(x[i]==x[i].toUpperCase()){
+                x1+=x[i].toLowerCase();
+            }
+            else{
+                x1+=x[i].toUpperCase();
+            }
+        }
+        console.log(x1)
+        // let arr=[1,2,1,2,2,2,1,2,3,4,5,3,4,5];
+        // x=parseInt(prompt());
+        // for(i=0;i<arr.length;i++){
+        //     if(arr[i]==x){
+        //         arr.splice(i,1);//delete 1 index from array;
+        //         i-=1;
+        //     }
+        // }
+        // console.log(arr)
     </script>
 </head>
 <body>
