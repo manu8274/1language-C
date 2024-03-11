@@ -4,19 +4,23 @@
 
 using namespace std;
 
-int x=5;
+// int x=5;
 
-void b(){
-    cout<<50+x;
-}
+// void b(){
+//     cout<<50+x;
+// }
 
-void a(){
-    int x=100;
-    b();
-}
+// void a(){
+//     int x=100;
+//     b();
+// }
 
 int main(){
-    a();
+    int i=5;
+    char s='t';
+    string t;
+    t=s;
+    cout<<t;
 }
 
 
