@@ -65,3 +65,10 @@ using namespace std;
 //     }
 //     cout<<mx;
 // }
+int main(){
+    vector<int> v={1,2,3,4,5};
+    v.begin()=v.begin()+1;
+    for(auto x:v){
+        cout<<x<<"\t";
+    }
+}
