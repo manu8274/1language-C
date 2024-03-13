@@ -1,0 +1,32 @@
+mechine laearning id=s into two types:
+    1)supervised learning;
+    2)unsupervised learning;
+    3)reinforcement learning;
+
+SUPERVISED LEARNING:-
+we have a teacher and student ,
+we have an adder;
+teacher teaches and then student does same then we check is adder if same to find accuracy 
+we find the difference bw adder of teacher and student to find accuracy
+wwe have dataset fully labeled
+
+UNSUPERVISED LEARNING:-
+user /refer learn from the mistakes and solve their mistakes and there are no labels and we have to assume the dataset
+
+REINFORCEMENT LEARNING:-
+like learning on leetcode;
+we have been forced to increase rank so
+used mostly in quantum computing
+
+
+SUPERVISED LEARNING:-
+    1)Regerssion
+        a)linear regression: the predicted give into the numerical form like 80%,60%.
+        b)logistic/boolean regression: whether YES or NO.eg will take loan or not,eligible or not
+
+LINEAR REGRESSION:-
+1)single(simple)
+2)multiple
+
+SINGLE LINEAR REGRESSION:-
+1)we have to draw a line which is near about to all point in dataset
