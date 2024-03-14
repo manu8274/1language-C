@@ -29,4 +29,16 @@ LINEAR REGRESSION:-
 2)multiple
 
 SINGLE LINEAR REGRESSION:-
-1)we have to draw a line which is near about to all point in dataset
+1)we have to draw a line which is near about to all point in dataset(line which is best fit)
+we have formula ==> y=mx+c (where m=slope,c=coercient)
+in a single linear regression there is only one independent variable and only one dependent variable.
+OR there will be only one input and one output
+eg-> CGPA, PACKAGE
+       7     8
+       7     8
+       9     11
+       8     7
+    as CGPA is indipendent variable so it denoted on X axis and PACKAGE is dependent on CGPA so Y axis
+    so PACKAGE = m*CGPA + c
+    why we use  c as neccesory;
+    as if CGPA / independent var is null so dependent var will be null so it cannot be happen

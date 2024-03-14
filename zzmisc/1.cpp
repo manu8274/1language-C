@@ -15,13 +15,13 @@ using namespace std;
 //     b();
 // }
 
-int main(){
-    int i=5;
-    char s='t';
-    string t;
-    t=s;
-    cout<<t;
-}
+// int main(){
+//     int i=5;
+//     char s='t';
+//     string t;
+//     t=s;
+//     cout<<t;
+// }
 
 
 // int main(){
@@ -59,3 +59,41 @@ int main(){
 //     }
 //     cout<<ts;
 // }
+
+int jump(vector<int>& nums){
+    if(nums.size()==1)  return 0;
+    if(nums[0]>=nums.size()-1)  return 1;
+    int jp=nums[0];
+    int jc=0;
+    int i=1;
+    while(i<nums.size()){
+        if(jp+i>=nums.size()){
+            // cout<<"start"<<endl;
+            return jc;
+        }
+        else    jc++;
+        int a=0;
+        int mx_a=jp+i;
+        int po=jp+i;
+        while(a<=jp){
+            if(mx_a<nums[a+i]+a+i){
+                if(nums[a+i]+a+i>=nums.size()){
+                    // cout<<"mid"<<jc<<endl;
+                    return jc+1;
+                }
+                mx_a=nums[a+i]+a+i;
+                po=a+i;
+            }
+            a++;
+        }
+        i=po;
+        jp=nums[po];
+        // jc++;
+    }
+    // cout<<"end";
+    return jc;
+}
+int main(){
+    vector<int>nums={1,2};
+    cout<<jump(nums);
+}
