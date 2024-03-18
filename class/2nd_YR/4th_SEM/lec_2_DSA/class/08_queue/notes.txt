@@ -1,0 +1,17 @@
+FIFO
+eg queue of person;
+operations :-
+    1)push  O(1) -enqueue
+    2)pop   O(1) -dequeue
+    3)front O(1)-return first element
+
+applications:
+    1)video processsing
+by array:-
+but in simple we need O(n) time to perform a dequeue function so we need to make CIRCULAR ARRAYS
+then we use modular operation to make the pointer get circular in the array
+    so we make front=(front+1)%n
+    so we use rear = (rear+1)%n
+    if(no dequeue) then front == rear
+    if(no enqueue) then rear == front
+    
