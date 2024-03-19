@@ -1,0 +1,27 @@
+Evaluation Regression Matrix :- 
+    work:-
+    to make calculate the diff the two points using these methods:-
+        MAE - Mean Absolute Error
+        tells us the diff bw the point and nearest point on the predicted line (for only y-ordinates)
+        FORMULA- (∑ |yx(point y ordinate) - yline(point at perpendicular to px and at predicted line)|)//2
+        ADVANTAGE-
+            1)it will give the value in the units of dependent variable
+            2)it is suitable for outliers
+
+        MSE - Mean Square Error
+        we will check the distance between point and perprndicular at prediccted line and the make a square 
+        FORMULA- (∑ (yx(point y) - yline(y at perpendicular to px and at predicted line))**2)//2
+
+        DISAVDANTAGES:-
+            1)not suitable for outliers
+            2)not give the value in unis of dependent variable  
+
+        RMSE - Route Mean Square Error
+        ROUTE = MSE**0.5
+        ADVANTAGE:-
+            1)will calculate the value in the units of dependent variable
+        DISAVDANTAGES:-
+            1)not suitable for outliers
+        R-Square Score -Adjusted R-Square Score (Modified R-Square Score)(M R S)
+
+    bw the dataset of CGPA and PLACEMENT 
