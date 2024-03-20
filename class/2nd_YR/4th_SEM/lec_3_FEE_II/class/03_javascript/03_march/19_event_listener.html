@@ -2,8 +2,73 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <script type="text/javascript">
+        document.getElementById("show").addEventListener("click",function(){
+            fn=myform.fname;
+            ln=myform.lname;
+            document.getElementById("hi").innerText=fn+" "+ln;
+        })
+    </script>
 </head>
 <body>
-    
+    <h1>COLLECTING THE FORM DATA</h1>
+    <form name="myform">
+        First Name : <input type="text" id="fname"><br>
+        Last Name : <input type="text" id="lname"><br>
+        <button id="show">SHOW</button>
+    </form>
+    <h1 id="hi"></h1>
 </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <br><button id="btn">hlo</button>
+    <h2 id="greet"></h2>
+    <script>
+        document.getElementById("btn").addEventListener("click",function(){
+            var d=new Date();
+            var mon=d.toLocaleString('default',{month:'long'});
+            var da=d.getDate();
+            var yr=d.getFullYear();
+            document.getElementById("greet").innerText=mon+" " + da + "," + yr;
+        })
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="greet">GOOD MORINNG USER !</h2>
+    <br><button id="btn">hlo</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",function(){
+            document.getElementById("greet").innerText="WELCOME BUDDY ";
+        })
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">CLICK HERE</button>
+    <script>
+        function myfun(){
+            alert("RSHGIODFSEFAv");
+        }
+        document.getElementById("btn1").addEventListener("click",myfun);
+    </script>
+</body>
+</html> -->
