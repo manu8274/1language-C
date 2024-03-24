@@ -1,0 +1,5 @@
+R=1 -  ((∑(yx-yline)square) for linear regression line//(∑(yx-yline)square) for mean vali line)
+R-Square Score -Adjusted R-Square Score (Modified R-Square Score)(M R S)
+    (1-Rsquare )* (n-1)/n-1-k
+    k=number orf indipendent column
+    
