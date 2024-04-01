@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function greet(name,callback){
+            console.log("hello " + name);
+            callback();
+        }
+        function calme(){
+            console.log("this is a calback function");
+        }
+        greet("ram",calme);
+        // var mf=function(){
+        //     console.log("hello");
+        // }
+        // console.log(mf(),typeof(mf));
+        // colors=['red','blue','green'];
+        // for (const [index,co] of colors.entries()){
+        //     console.log(`${co} is at index ${index}`);
+        // }
+        // let sc=[85,90,95];
+        // console.log(typeof(sc[0]));
+        // for (var s of sc){
+        //     s=sc+5;
+        //     console.log((s));
+        // }
+        // const title="Java script is wonderful";
+        // console.log("title.startsWith('script') "+title.startsWith('script'));
+        // console.log("title.startsWith('Java') "+title.startsWith('Java'));
+        // console.log("title.startsWith('Ja') "+title.startsWith('Ja'));
+        // console.log("title.startsWith('script',5) "+title.startsWith('script',5));
+        // console.log("title.endsWith('script') "+title.endsWith('script'));
+        // console.log("title.endsWith('wonderful') "+title.endsWith('wonderful'));
+        // console.log("title.endsWith('ful') "+title.endsWith('ful'));
+        // console.log("title.endsWith('is',14) "+title.endsWith('is',14));
+        // const str="hello ";
+        // console.log(str.repeat(3));
+    </script>
+</head>
+<!-- <body>
+    
+</body> -->
+</html>
