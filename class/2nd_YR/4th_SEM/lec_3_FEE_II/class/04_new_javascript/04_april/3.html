@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let toggle;
+        function count(sec){
+            const countdown=setInterval(function(){
+                sec--;
+                if(sec<0){
+                    // document.getElementById('toggle').innerText="START";
+                    // toggle="Start";
+                    clearInterval(countdown);//to stop the interval
+                    document.getElementById("h1").innerText="";
+                }
+                else{
+                    document.getElementById("h1").innerText=sec;
+                }
+            },1000);
+        }
+    </script>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <br>
+    <button id="toggle" onclick="count(5)">START</button><br>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function myfunc(){
+            var element = document.body;
+            element.classList.toggle("dark_mode");
+        }
+    </script>
+    <style>
+        body{
+            padding: 35px;
+            background-color: white;
+            color: black;
+            font-size: 40px;
+        }
+        .dark_mode{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>TOGGLE DARK/LIGHT MODE</h2>
+    <p>click the button to toggle dark mode for this page</p>
+    <br>
+    <button id="toggle" onclick="myfunc()">DARK</button>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function myf(){
+            var  x=document.getElementById("d1");
+            if(x.style.display === "none"){
+                x.style.display = "block";
+                document.getElementById("toggle").innerText = "HIDE";
+            }
+            else{
+                x.style.display = "none";
+                document.getElementById("toggle").innerText = "SHOW";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+        this text is inside div 1;
+    </div>
+    <br>
+    <button id="toggle" onclick="myf()">HIDE</button>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="text/javascript">
+        let chk='Swap';
+        function pcswap(){
+            if(chk=="Swap"){
+                document.getElementById('p1').src="matt.jpg";
+                document.getElementById('p2').src="leon.jpg";
+                document.getElementById('toggle').innerText='Reset';
+                chk='Reset';
+            }
+
+            else{
+                document.getElementById('p1').src="leon.jpg";
+                document.getElementById('p2').src="matt.jpg";
+                document.getElementById('toggle').innerText='swap';
+                chk='Swap';
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="p1" src="leon.jpg" alt="p1" height="100">
+    <img id="p2" src="matt.jpg" alt="p2" height="100">
+    <br>
+    <button id="toggle" onclick="pcswap()">SWAP</button>
+</body>
+</html> -->
