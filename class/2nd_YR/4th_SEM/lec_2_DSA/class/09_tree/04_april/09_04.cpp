@@ -30,15 +30,5 @@ node* convert_from_arr(int * arr,int size){
 }
 
 int main(){
-    node *tree=new node(1);
-    tree->left=new node(2);
-    tree->right=new node(3);
-    tree->right->right=new node(200);
-    tree->right->left=new node(100);
-    tree->left->left=new node(1000);
-    tree->left->right=new node(2000);
-    print(tree);
-    cout<<endl;
-    node *t;
-    print(t);
+    
 }

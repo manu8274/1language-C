@@ -1,0 +1,4 @@
+for max no of node on a level= 2^level number
+for max no of nodes uptill a level=2^(highest_level +1) -1
+for height/level with no if nodes = log with base 2(no of nodes)
+if a perfect binary tree the no of leaf nodes = no of nodes with 2 children +1
