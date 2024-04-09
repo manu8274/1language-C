@@ -1,0 +1,25 @@
+types of binary tree:-
+    1)full binary tree:-which has 0 or 2 nodes
+    2)compelete binary tree:-compeletely fill nodes ie either 2 children uptill last level while filling from left , ie all nodes are left align
+    3)perfect binary tree:-all node have 2 children and all leaf are at same level
+    4)balanced binary tree:-height=order of log(n) , height of left subtree-height right subtree is <= 1
+        1)AVL tree:-height=order of log(n) , height of left subtree - height right subtree is <= 1
+        2)Red-black tree:-height=order of log(n),constraints for red and black nodes
+    6)degenerate binary tree:-only one node for every parent
+
+TRAVERSAL:
+    1)depth first-first check depth
+        1)inorder-(LEFT ROOT RIGHT)
+        2)preorder-(ROOT LEFT RIGHT)
+        3)postorder-(LEFT RIGHT ROOT)
+    2)breadth first-level order traversal
+
+            A
+         /     \
+        B       C
+       / \     /  \
+      D   E   F    G
+    1)inorder-DBEAFCG
+    2)preorder-ABDECFG
+    3)postorder-DEBFGEA
+    4)level order traversal-ABCDEFG
