@@ -19,7 +19,7 @@ TRAVERSAL:
         B       C
        / \     /  \
       D   E   F    G
-    1)inorder-DBEAFCG
-    2)preorder-ABDECFG
-    3)postorder-DEBFGEA
+    1)inorder   - DBEAFCG
+    2)preorder  - ABDECFG
+    3)postorder - DEBFGCA
     4)level order traversal-ABCDEFG
