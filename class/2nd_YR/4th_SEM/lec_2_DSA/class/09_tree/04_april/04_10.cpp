@@ -48,10 +48,6 @@ void levelorder(node *r){
 
 // formula are left=2*i+1 , right=2*i+2
 
-node* arr_to_tree(int arr[]){
-    
-}
-
 int main(){
     node *tree=new node('A');
     tree->left=new node('B');

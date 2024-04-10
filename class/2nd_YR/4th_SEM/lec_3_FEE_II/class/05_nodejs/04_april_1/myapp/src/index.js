@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Mycomp from './component/Mycomp';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Mycomp />
+    <Contact/>
   </React.StrictMode>
 );
 

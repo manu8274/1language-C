@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Mycomp() {
+export default function Contact() {
   return (
     <div>
-      <p>ldsiyvcyivq</p>
+      CONTACT PAGE!
     </div>
   )
 }
