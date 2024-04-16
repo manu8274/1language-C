@@ -5,29 +5,35 @@
 using namespace std;
 
 int main(){
-    int n;
-    int m;
-    cin>>n>>m;
-    vector<int> v1;
-    vector<int>v2;
-    for(int i=0;i<n;i++){
-        int t;
-        cin>>t;
-        v1.push_back(t);
-    }
-    for(int i=0;i<m;i++){
-        int t;
-        cin>>t;
-        v2.push_back(t);
-    }
-    vector<int> ans;
-    int i=0;
-    int v1i=0,v2i=0;
-    int v1s=n,v2s=m;
-    for(int i=0;i<n+m;i++){
-        
-    }
+    vector<int> v={1,2,3,4,5};
+    v.pop_back();
+    cout<<v.back();
 }
+
+// int main(){
+//     int n;
+//     int m;
+//     cin>>n>>m;
+//     vector<int> v1;
+//     vector<int>v2;
+//     for(int i=0;i<n;i++){
+//         int t;
+//         cin>>t;
+//         v1.push_back(t);
+//     }
+//     for(int i=0;i<m;i++){
+//         int t;
+//         cin>>t;
+//         v2.push_back(t);
+//     }
+//     vector<int> ans;
+//     int i=0;
+//     int v1i=0,v2i=0;
+//     int v1s=n,v2s=m;
+//     for(int i=0;i<n+m;i++){
+        
+//     }
+// }
 
 // int main(){
 //     string s;

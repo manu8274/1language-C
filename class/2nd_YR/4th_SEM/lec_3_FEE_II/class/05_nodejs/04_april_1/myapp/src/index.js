@@ -7,15 +7,18 @@ import reportWebVitals from './reportWebVitals';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home'
+import Array from './Pages/Array'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+  <App />
   <Routes>
-  <Route path='/' element={<App/>} />
+  <Route path='/' element={<Home/>} />
     <Route path='/about' element={<About/>} />
     <Route path='/contact' element={<Contact/>} />
-    <Route path='/home' element={<Home/>} />
+    <Route path='/array' element={<Array/>} />
+    {/* <Route path='/home' element={<Home/>} /> */}
   </Routes>
   </BrowserRouter>
 );
