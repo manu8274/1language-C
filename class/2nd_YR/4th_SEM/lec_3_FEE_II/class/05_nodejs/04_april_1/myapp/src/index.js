@@ -8,6 +8,9 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home'
 import Array from './Pages/Array'
+import Table from './Pages/Table';
+import Table_with_arg from './Pages/Table_with_arg';
+import Welcome from './Pages/Welcome';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +21,9 @@ root.render(
     <Route path='/about' element={<About/>} />
     <Route path='/contact' element={<Contact/>} />
     <Route path='/array' element={<Array/>} />
+    <Route path='/table' element={<Table/>} />
+    <Route path='/table_with_arg' element={<Table_with_arg/>} />
+    <Route path='/Welcome' element={<Welcome user="MANASVI"/>} />
     {/* <Route path='/home' element={<Home/>} /> */}
   </Routes>
   </BrowserRouter>

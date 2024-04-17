@@ -5,9 +5,13 @@
 using namespace std;
 
 int main(){
-    vector<int> v={1,2,3,4,5};
-    v.pop_back();
-    cout<<v.back();
+    // vector<int> v={1,2,3,4,5};
+    // v.pop_back();
+    // cout<<v.back();
+    string s="abc";
+    string s1=string(1,char('a'+ 3)) +s;
+    cout<<s<<endl;
+    cout<<s1<<endl;
 }
 
 // int main(){
