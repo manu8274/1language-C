@@ -5,14 +5,34 @@
 using namespace std;
 
 int main(){
+    vector<int> v={1,2,3,4,5,6,7,8,9,10};
+    reverse(v.begin()+0,v.begin()+0+5);
+    for(int i=0;i<10;i++){
+        cout<<v[i]<<"\t";
+    }
+}
+
+// int main(){
     // vector<int> v={1,2,3,4,5};
     // v.pop_back();
     // cout<<v.back();
-    string s="abc";
-    string s1=string(1,char('a'+ 3)) +s;
-    cout<<s<<endl;
-    cout<<s1<<endl;
-}
+    // string s="abc";
+    // string s1=string(1,char('0'+ 3));
+    // cout<<s1;
+    // cout<<s<<endl;
+    // cout<<s1<<endl;
+    // vector<int>v ={1,2,3,4,5};
+    // vector<int>v1={5,4,3,2,1};
+    // reverse(v.begin(),v.end());
+    // if(v==v1){
+    //     cout<<"hellrow";
+    // }
+    // cout<<typeid(string(1,'8'-48 +1)).name();
+    // string a="123";
+    // // char s=a[a.size()-1]+1;
+    // a[2]=a[2]-a[2] +48;
+    // cout<<a;
+// }
 
 // int main(){
 //     int n;

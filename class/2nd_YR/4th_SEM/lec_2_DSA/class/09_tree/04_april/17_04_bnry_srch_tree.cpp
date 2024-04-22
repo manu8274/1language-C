@@ -53,12 +53,35 @@ node *build(int *arr, int i, int size,node *root){
     return root;
 }
 
-node *bst(){}
+node *bst(node * root,int val){
+    if(root==nullptr){
+        root=new node(val);
+        return root;
+    }
+    else if(val>=root->get_data()){
+        root->right=bst(root->right,val);
+    }
+    else{
+        root->left=bst(root->left,val);
+    }
+    return root;
+}
 
 int main(){
     
-    int arr[7]={1,2,3,4,5,6,7};
-    node * tree=nullptr;
-    tree=build(arr,0,7,tree);
+    // int arr[7]={1,2,3,4,5,6,7};
+    // node * tree=nullptr;
+    // tree=build(arr,0,7,tree);
+    // preorder(tree);
+    int arr[6]={12,16,200,15,1,-31};
+    node *tree=new node(arr[0]);
+    for(int i=1;i<6;i++){
+        tree=bst(tree,arr[i]);
+    }
+    inorder(tree);
+    cout<<endl;
     preorder(tree);
+    cout<<endl;
+    postorder(tree);
+    cout<<endl;
 }
