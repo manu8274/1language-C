@@ -13,9 +13,12 @@ import Table_with_arg from './Pages/Table_with_arg';
 import Welcome from './Pages/Welcome';
 import Login from './Pages/Login';
 import Logout from './Pages/Logout';
+import { ReactSession} from 'react-client-session'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+let u=ReactSession.get("logged_user");
 root.render(
+  // let u = ReactSession.get("logged_user");
   <BrowserRouter>
   <App />
   <Routes>
@@ -28,6 +31,9 @@ root.render(
     <Route path='/Welcome' element={<Welcome user="MANASVI"/>} />
     <Route path='/login' element={<Login/>} />
     <Route path='/logout' element={<Logout/>} />
+    {/* {
+      u?(<><Route path='/logout' element={<Logout/>} /></>):(<><Route path='/login' element={<Login/>} /></>)
+    } */}
     {/* <Route path='/home' element={<Home/>} /> */}
   </Routes>
   </BrowserRouter>
