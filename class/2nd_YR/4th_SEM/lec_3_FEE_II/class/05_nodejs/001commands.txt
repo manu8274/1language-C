@@ -1,0 +1,4 @@
+to install a app - npx create-react-app myapp
+to install router dom - npm install react-router-dom
+to install router dom - npm install react-client-session --legacy-peer-deps
+
