@@ -14,6 +14,8 @@ import Welcome from './Pages/Welcome';
 import Login from './Pages/Login';
 import Logout from './Pages/Logout';
 import { ReactSession} from 'react-client-session'
+import Toggle from './Pages/Toggle';
+import Counter from './Pages/Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let u=ReactSession.get("logged_user");
@@ -31,10 +33,8 @@ root.render(
     <Route path='/Welcome' element={<Welcome user="MANASVI"/>} />
     <Route path='/login' element={<Login/>} />
     <Route path='/logout' element={<Logout/>} />
-    {/* {
-      u?(<><Route path='/logout' element={<Logout/>} /></>):(<><Route path='/login' element={<Login/>} /></>)
-    } */}
-    {/* <Route path='/home' element={<Home/>} /> */}
+    <Route path='/toggle' element={<Toggle/>} />
+    <Route path='/counter' element={<Counter/>} />
   </Routes>
   </BrowserRouter>
 );

@@ -1,24 +1,31 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import { ReactSession} from 'react-client-session'
+import { NavLink } from 'react-router-dom';
+import './Nav.css'
+
+// a->reload everytime
+// link->only one time reload and download all
+// Navlink ->shows also which tab you r on 
 
 export default function Nav() {
-  let u =  ReactSession.get("logged_user");
+  var user =  ReactSession.get("logged");
+  console.log("hello",user);
   return (
     <div>
       <nav className='main-nav'>
-        <Link to='/'>Home</Link><br></br>
-        <Link to='/About'>ABOUT</Link><br></br>
-        <Link to='/Contact'>CONTACT</Link><br></br>
-        <Link to='/Array'>ARRAY</Link><br></br>
-        <Link to='/Table_with_arg'>TABLE WITH ARGUMENT 7</Link><br></br>
-        <Link to='/Table'>TABLE</Link><br></br>
-        <Link to='/Welcome'>WELCOME</Link><br></br>
-        <Link to='/Logout'>Logout</Link><br></br>
-        <Link to='/Login'>Login</Link><br></br>
+        <NavLink to='/'>Home</NavLink><br></br>
+        <NavLink to='/About'>ABOUT</NavLink><br></br>
+        <NavLink to='/Contact'>CONTACT</NavLink><br></br>
+        <NavLink to='/Array'>ARRAY</NavLink><br></br>
+        <NavLink to='/Table_with_arg'>TABLE WITH ARGUMENT 7</NavLink><br></br>
+        <NavLink to='/Table'>TABLE</NavLink><br></br>
+        <NavLink to='/Welcome'>WELCOME</NavLink><br></br>
         {
-          u?(<><Link to='/Logout'>Logout</Link><br></br></>):(<><Link to='/Login'>Login</Link><br></br></>)
+          user?(<><NavLink to='/Logout'>Logout</NavLink><br></br></>):(<><NavLink to='/Login'>Login</NavLink><br></br></>)
         }
+        <NavLink to='/Toggle'>TOGGLE</NavLink><br></br>
+        <NavLink to='/Counter'>COUNTER</NavLink><br></br>
       </nav>
     </div>
   )

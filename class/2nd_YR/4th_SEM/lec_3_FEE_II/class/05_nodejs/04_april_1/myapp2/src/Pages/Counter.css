@@ -1,0 +1,31 @@
+.container{
+    text-align: center;
+    margin-top: 10%;
+}
+.inc{
+    background-color: red;
+    /* color: blue; */
+    padding: 1%;
+}
+.inc:hover{
+    font-weight: bold;
+    transform: scale(1.2);
+}
+.dec{
+    background-color: blue;
+    /* color: blue; */
+    padding: 1%;
+}
+.dec:hover{
+    font-weight: bold;
+    transform: scale(1.2);
+}
+.res{
+    background-color: yellow;
+    /* color: blue; */
+    padding: 1%;
+}
+.res:hover{
+    font-weight: bold;
+    transform: scale(1.2);
+}

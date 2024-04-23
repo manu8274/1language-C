@@ -5,8 +5,8 @@ import Home from './Home';
 // import App from '../App';
 
 export default function Login() {
-    let user=prompt("enter username: ");
-    ReactSession.set("logged_user",user);
+    let u=prompt("enter username: ");
+    ReactSession.set("logged",u);
   return (
     <div>
         <Home />
