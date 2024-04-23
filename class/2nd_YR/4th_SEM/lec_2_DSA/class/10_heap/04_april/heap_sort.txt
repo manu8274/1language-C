@@ -1,0 +1,2 @@
+s1) make a heap of vector
+s2) pop root from heap and heapify untill all are out;
