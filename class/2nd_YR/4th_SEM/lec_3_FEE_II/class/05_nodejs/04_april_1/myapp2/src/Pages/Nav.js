@@ -26,6 +26,7 @@ export default function Nav() {
         }
         <NavLink to='/Toggle'>TOGGLE</NavLink><br></br>
         <NavLink to='/Counter'>COUNTER</NavLink><br></br>
+        <NavLink to='/Arrayhide'>Arrayhide</NavLink><br></br>
       </nav>
     </div>
   )

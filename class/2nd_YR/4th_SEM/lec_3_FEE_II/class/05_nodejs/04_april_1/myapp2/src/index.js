@@ -16,6 +16,8 @@ import Logout from './Pages/Logout';
 import { ReactSession} from 'react-client-session'
 import Toggle from './Pages/Toggle';
 import Counter from './Pages/Counter';
+import Arrayhide from './Pages/Arrayhide';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let u=ReactSession.get("logged_user");
@@ -35,6 +37,7 @@ root.render(
     <Route path='/logout' element={<Logout/>} />
     <Route path='/toggle' element={<Toggle/>} />
     <Route path='/counter' element={<Counter/>} />
+    <Route path='/Arrayhide' element={<Arrayhide/>} />
   </Routes>
   </BrowserRouter>
 );
