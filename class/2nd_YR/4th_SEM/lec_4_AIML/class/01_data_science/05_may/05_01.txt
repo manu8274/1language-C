@@ -1,0 +1,13 @@
+UNSUPERVISED DATA
+K-means clustering:-----
+    1)start with k centroids by putting them at random place 
+    2)create a line which divides the data into k clusters with 90 deg of k centroids
+    3)now adjust the centroids with according to their center of mass
+    4)create another line which divides the data into k clusters with 90 deg of k centroids matching clusters
+    5)now repeat 3 and 4 again upto we get center of mass at same place when after 4 there is no change
+
+    QUESTION 1)how many clusters:
+        using algorithm SSE sum of square for all numbr of cluster from 1 to number of points
+        using elbow algorithm we can determine the number of clusters
+
+standard scalar/min-max scalar to create the x values and y values bewtween 0 and 1, to make the data relative for other data
