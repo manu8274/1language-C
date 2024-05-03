@@ -27,7 +27,7 @@ class face_recog:
             fc_img=face_recognition.load_image_file(f'faces/{img}')
             fc_encoding=face_recognition.face_encodings(fc_img)[0]
             self.known_face_encoding.append(fc_encoding)
-            self.known_face_names.append(img)
+            self.known_face_names.append(img.split(".")[0])
         print(self.known_face_names)
     
     def run_recog(self):
