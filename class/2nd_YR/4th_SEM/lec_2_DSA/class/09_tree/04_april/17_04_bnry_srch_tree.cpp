@@ -79,9 +79,9 @@ int main(){
         tree=bst(tree,arr[i]);
     }
     inorder(tree);
-    cout<<endl;
-    preorder(tree);
-    cout<<endl;
-    postorder(tree);
+    // cout<<endl;
+    // preorder(tree);
+    // cout<<endl;
+    // postorder(tree); 
     cout<<endl;
 }

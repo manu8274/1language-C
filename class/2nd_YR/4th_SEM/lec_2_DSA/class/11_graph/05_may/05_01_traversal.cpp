@@ -65,6 +65,25 @@ class graph{
                 }
             }
         }
+        vector<int> dfs(int src){
+            vector<int>ans;
+            bool *vis=new bool [v]{0};
+            stack<int>st;
+            st.push(src);
+            vis[src]=true;
+            while(!st.empty()){
+                int f=st.top();
+                st.pop();
+                ans.push_back(f);
+                for(int n:l[f]){
+                    if(!vis[n]){
+                        st.push(n);
+                        vis[n]=true;
+                    }
+                }
+            }
+            return ans;
+        }
 };
 // depth first - first go in depth and write
 // breadth first-with line wise like level order
@@ -85,7 +104,10 @@ int main(){
     //     cout<<i<<"\t";
     // }
     // cout<<endl;
-    g1.bfs1(1);
+    vector<int>ans=g1.dfs(1);
+    for(auto x:ans){
+        cout<<x<<"\t";
+    }
     cout<<endl;
     // g1.print();
 }
