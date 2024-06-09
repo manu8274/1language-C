@@ -25,6 +25,6 @@ int main(){
             start=i-q.size()+1;
         }
     }
-    for(int i=start;i<=end;i++) cout << s[i];
-    cout << endl;
+    for(int i=start;i<=end;i++) {cout<<s[i];}
+    cout<<endl;
 }
