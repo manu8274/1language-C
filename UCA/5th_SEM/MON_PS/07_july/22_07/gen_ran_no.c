@@ -21,7 +21,7 @@ int main()
     struct timeval before;//get a value in structure
     gettimeofday(&before, NULL); // before gives two vale a number of sec and a number microsec
     long long before_millis = before.tv_sec * 1000LL + before.tv_usec / 1000;
-    printf("HELLO \n");
+    printf("HELLO \n");//LL signify long long
     struct timeval after;
     gettimeofday(&after, NULL);
     long long after_millis = after.tv_sec * 1000LL + after.tv_usec / 1000;
