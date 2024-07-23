@@ -3,6 +3,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "longest_sub",
+            "request": "launch",
+            "mainClass": "UCA.SEM5.JAVA.longest_sub",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "longest_sub",
+            "request": "launch",
+            "mainClass": "UCA.JAVA_12.longest_sub",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "longest_sub",
+            "request": "launch",
+            "mainClass": "UCA.JAVA.longest_sub",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "m",
+            "request": "launch",
+            "mainClass": "JAVA.lec1_2.m",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "m",
+            "request": "launch",
+            "mainClass": "m",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "a",
+            "request": "launch",
+            "mainClass": "JAVA.lec1_2.a",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "a",
+            "request": "launch",
+            "mainClass": "a",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "longest_sub",
+            "request": "launch",
+            "mainClass": "UCA.JAVA_TUES.longest_sub",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "longest_sub",
+            "request": "launch",
+            "mainClass": "UCA.JAVA_TUES.Tuesday.july.longest_sub",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
+            "name": "longest_sub",
+            "request": "launch",
+            "mainClass": "longest_sub",
+            "projectName": "1language-C_545a2f4"
+        },
+        {
+            "type": "java",
             "name": "lec_6_pattern2",
             "request": "launch",
             "mainClass": "JAVA.lec3_.lec_6_pattern2",
