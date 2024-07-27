@@ -4,13 +4,13 @@
 
 var productlist = [//array of list
     { name: "DISH1", description: "tasty", price: "100" },
-    { name: "steak", description: "very tasty", price: "200" },
+    { name: "steak", description: "very tasty", price: "200" }
 
 ]
 
 function make_prod() {
-    document.getElementById("product_menu").innerHTML = `<table>
-            <h3>LIST</h3>
+    document.getElementById("product_menu").innerHTML = 
+        `<table>
             <thead>
                 <tr>
                     <th>Sr.No</th>
@@ -20,12 +20,13 @@ function make_prod() {
                 </tr>
             </thead>
             <tbody>
-                ${get_productlisthtml()};
+                ${get_productlisthtml_usingmap()}
+                ${get_productlisthtml()}
             </tbody>
         </table>`
 }
 
-function get_productlisthtml() {
+function get_productlisthtml() {//to put data in table
     var rows = "";
     for (let i = 0; i < productlist.length; i++) {
         rows = rows + `
@@ -38,6 +39,19 @@ function get_productlisthtml() {
                 `
     }
     return rows;
+}
+
+
+function get_productlisthtml_usingmap() {
+    var rows = productlist.map((i, index) => {
+        return `<tr>
+            <td>${index + 1}</td>
+            <td>${i.name}</td>
+            <td>${i.description}</td>
+            <td>${i.price}</td>
+        </tr>`
+    })
+    return rows
 }
 
 
