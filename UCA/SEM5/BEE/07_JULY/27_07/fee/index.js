@@ -1,15 +1,15 @@
-function init(){
-    document.getElementById('jsworld').innerHTML="Hello World From JS";
-}
+// function init() {
+//     document.getElementById('jsworld').innerHTML = "Hello World From JS";
+// }
 
-var productlist=[//array of list
-    {name : "", description :"" , price : ""},
-    {name : "", description : "", price : "" },
+var productlist = [//array of list
+    { name: "DISH1", description: "tasty", price: "100" },
+    { name: "steak", description: "very tasty", price: "200" },
 
 ]
 
-function make_prod(){
-    document.getElementById("product_menu").innerHTML =`<table>
+function make_prod() {
+    document.getElementById("product_menu").innerHTML = `<table>
             <h3>LIST</h3>
             <thead>
                 <tr>
@@ -20,29 +20,26 @@ function make_prod(){
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Dish 1</td>
-                    <td>Dish 1 Details</td>
-                    <td>150</td>
-                </tr>
+                ${get_productlisthtml()};
             </tbody>
         </table>`
 }
 
-function get_productlisthtml(){
-    for(let i = 0;i < productlist.length ; i++ ){
-        return `
+function get_productlisthtml() {
+    var rows = "";
+    for (let i = 0; i < productlist.length; i++) {
+        rows = rows + `
                 <tr>
-                    <td>1</td>
-                    <td>Dish 1</td>
-                    <td>Dish 1 Details</td>
-                    <td>150</td>
+                    <td>${i + 1}</td>
+                    <td>${productlist[i].name}</td>
+                    <td>${productlist[i].description}</td>
+                    <td>${productlist[i].price}</td>
                 </tr>
                 `
     }
+    return rows;
 }
 
 
-init();
+// init();
 make_prod();
