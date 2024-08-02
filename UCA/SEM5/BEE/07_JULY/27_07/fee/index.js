@@ -129,8 +129,7 @@ function get_productlisthtml_usingmap() {
             <td>${i.price}</td>
         </tr>`
     })
-    return rows.join("
-        ")
+    return rows.join("")
 }
 
 
