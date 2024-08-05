@@ -40,7 +40,7 @@ void merge_sort_recur(int arr[], int aux[], int left, int right)
     // operations
     int mid = (left + right) / 2;
     merge_sort_recur(arr, aux, left, mid);
-    merge_sort_recur(arr, aux, mid+1, right);
+    merge_sort_recur(arr, aux, mid + 1, right);
     merge(arr, aux, left, mid, right);
 }
 
@@ -51,7 +51,7 @@ void merge_sort(int arr[], int n)
     free(aux);
 }
 
-long long int time_elapsed(int n)
+long long time_elapsed(int n)
 {
     int *arr = (int *)malloc(n * sizeof(int));
 
@@ -66,10 +66,10 @@ long long int time_elapsed(int n)
     long long int before_millis = before.tv_sec * 1000LL + before.tv_usec / 1000;
 
     merge_sort(arr, n);
-
+    printf("%d\n", n);
     struct timeval after;
     gettimeofday(&after, NULL);
-    long long int after_millis = after.tv_sec * 1000LL + after.tv_usec / 1000;
+    long long after_millis = after.tv_sec * 1000LL + after.tv_usec / 1000;
     return after_millis - before_millis;
 }
 
@@ -88,8 +88,9 @@ int main()
 {
     // test_simple_input();
 
-    long long int t1 = time_elapsed(4);
-    long long int t2 = time_elapsed(8);
-    printf("%lli", t2 * 1.0 / t1);
+    long long t1 = time_elapsed(32000);
+    long long t2 = time_elapsed(64000);
+    printf("%lld \t %lld\n", t2, t1);
+    printf("%lld", t2 / t1);
     return 0;
 }
