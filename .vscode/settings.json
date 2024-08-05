@@ -83,5 +83,6 @@
     "accessibility.signals.lineHasError": {
         "sound": "on"
     },
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "cmake.sourceDirectory": "C:/Users/manu1/Desktop/ubuntu18/1language-C"
 }
