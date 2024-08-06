@@ -90,7 +90,7 @@ int main()
 
     long long t1 = time_elapsed(32000);
     long long t2 = time_elapsed(64000);
-    printf("%lld \t %lld\n", t2, t1);
-    printf("%lld", t2 / t1);
+    printf("%ld \t %ld\n", t2, t1);
+    printf("%ld", t2 / t1);
     return 0;
 }
