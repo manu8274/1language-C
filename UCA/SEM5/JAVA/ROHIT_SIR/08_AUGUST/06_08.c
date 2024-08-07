@@ -71,10 +71,10 @@
 
 int main()
 {
-	int a = 10;
+	int a = 500;
 	int *b = &a;
 	char *c = &a;
-	printf("%d\n", &b);
-	printf("%d\n", &c);
+	printf("%d\n", *b);
+	printf("%d\n", *c);
 	return 0;
 }
