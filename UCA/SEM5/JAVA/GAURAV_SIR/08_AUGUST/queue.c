@@ -31,8 +31,9 @@ void push(int val)
 int pop()
 {
     int vl = -1;
-    if (head == NULL)
+    if (head == NULL){
         perror("------------------UNDERFLOW----------------------");
+    }
     else
     {
         vl = head->val;
