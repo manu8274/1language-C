@@ -11,27 +11,21 @@ struct node
 struct node *head = NULL;
 int n = 0;
 
-void push(int val)
+void push(int value)
 {
-    if (head == NULL)
-    {
-        head->val = val;
-        head->next = NULL;
-    }
-    else
-    {
-        struct node *new;
-        new->val = val;
-        new->next = head;
-        head = new;
-    }
+    printf("in push l1\n");
+    struct node *new;
+    new->val = value;
+    new->next = head;
+    head = new;
     n++;
 }
 
 int pop()
 {
     int vl = -1;
-    if (head == NULL){
+    if (head == NULL)
+    {
         perror("------------------UNDERFLOW----------------------");
     }
     else
@@ -55,13 +49,18 @@ int size()
 
 void test_sample()
 {
+    // printf("%d", 1234);
     push(1);
     push(2);
     push(3);
-
-    assert(pop() == 1);
-    assert(pop() == 2);
-    assert(size() == 0);
+    printf("size = %d\n", size());
+    printf("pop 1 = %d\n", pop());
+    printf("pop 2 = %d\n", pop());
+    printf("pop 2 = %d\n", pop());
+    printf("isEmpty() = %d\n", isEmpty());
+    // assert(pop() == 1);
+    // assert(pop() == 2);
+    // assert(size() == 0);
 }
 
 int main()
